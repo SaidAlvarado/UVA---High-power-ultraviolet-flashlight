@@ -1,5 +1,7 @@
 # LM73-Q1 Temperature Sensor #
 
+* [Library](https://github.com/zkemble/LM73)
+
 ## Installation ##
 
 1. Download the [latest release archive from GitHub](https://github.com/zkemble/LM73/archive/master.zip) and decompress it.

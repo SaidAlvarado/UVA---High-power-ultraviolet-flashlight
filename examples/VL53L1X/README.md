@@ -1,5 +1,7 @@
 # VL53L1X Distance Sensor #
 
+* [Library](https://github.com/sparkfun/SparkFun_VL53L1X_Arduino_Library)
+
 ## Installation ##
 
 If you are using version 1.6.2 or later of the Arduino software (IDE), you can use the Library Manager to install this library:
