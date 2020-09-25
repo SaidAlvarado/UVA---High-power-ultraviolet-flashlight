@@ -1,29 +1,11 @@
-# README #
+# UVA Firmware #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Main structure for the UVA, and examples for each sensor.
 
-### What is this repository for? ###
+## Requirements ##
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+1. LM73-Q1 Temperature Sensor ([Library](https://github.com/zkemble/LM73))
 
-### How do I get set up? ###
+## Examples ##
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+1.[LM73-Q1 Temperature Sensor](examples/LM73/README.md)
