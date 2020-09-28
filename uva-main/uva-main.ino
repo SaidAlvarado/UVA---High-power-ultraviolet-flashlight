@@ -3,11 +3,14 @@
   Reading distance from the laser based VL53L1X
   This example prints the distance to an object.
   Are you getting weird readings? Be sure the vacuum tape has been removed from the sensor.
+  
   LM73 Temperature Sensor
   Low power one shot temperature conversion
   A4 -> SDA
   A5 -> SCL
   2 -> ALM
+
+  SSD1306 Oled text prints
 */
 #include <ComponentObject.h>
 #include <RangeSensor.h>
@@ -17,10 +20,20 @@
 #include <Wire.h>
 #include "SparkFun_VL53L1X.h" //Click here to get the library: http://librarymanager/All#SparkFun_VL53L1X
 #include <LM73.h>
+#include <SPI.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
 
 //Optional interrupt and shutdown pins.
 #define SHUTDOWN_PIN 2
 #define INTERRUPT_PIN 3
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+
+// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire);
+
 
 SFEVL53L1X distanceSensor;
 //Uncomment the following line to use the optional shutdown and interrupt pins.
@@ -40,8 +53,7 @@ void setup(void)
   if (distanceSensor.begin() != 0) //Begin returns 0 on a good init
   {
     Serial.println("Sensor failed to begin. Please check wiring. Freezing...");
-    while (1)
-      ;
+    while (1);
   }
   Serial.println("Sensor online!");
 
@@ -49,6 +61,27 @@ void setup(void)
   lm73.setResolution(LM73_RESOLUTION_14BIT); // 14 bit
   lm73.power(LM73_POWER_OFF); // Turn off sensor (one shot temperature conversion)
 
+  // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3D)) { // Address 0x3D for 128x64
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;); // Don't proceed, loop forever
+  }
+
+  // Show initial display buffer contents on the screen --
+  // the library initializes this with an Adafruit splash screen.
+  display.display();
+  delay(2000); // Pause for 2 seconds
+
+  // Clear the buffer
+  display.clearDisplay();
+
+  // Sow "Text example" in the ssd1306 oled
+  display.setTextSize(2); // Draw 2X-scale text
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(10, 0);
+  display.println(F("Text example"));
+  display.display();      // Show initial text
+  
   Serial.println("VL53L1X - Initiate measurement...");
   
   // Write configuration bytes to initiate measurement
