@@ -26,4 +26,4 @@ Main structure for the UVA, and examples for each sensor.
 
 ## Main ##
 
-- [uva-main](uva-main/uva-main.ino): The code starts measurements from the temperature sensor and the distance sensor, and waits until each one finishes the measurement, once it is ready, it prints the results in the serial monitor and starts new conversions. The code also prints a text message in the screen (just to test that the library is working correctly).
+- [uva-main](uva-main/uva-main.ino): The code starts measurements from the temperature sensor and the distance sensor, and waits until each one finishes the measurement, once it is ready, it prints the results in the serial monitor and starts new conversions. The code also displays the results of the measurements in the screen.

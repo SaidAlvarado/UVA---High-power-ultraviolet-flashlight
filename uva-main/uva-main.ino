@@ -36,12 +36,14 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire);
 
 
 SFEVL53L1X distanceSensor;
+int distance;
 //Uncomment the following line to use the optional shutdown and interrupt pins.
 //SFEVL53L1X distanceSensor(Wire, SHUTDOWN_PIN, INTERRUPT_PIN);
 
 // Temperature Sensor Object
 LM73 lm73 = LM73();
 byte lm73_start_time;
+double temp;
 
 void setup(void)
 {
@@ -99,7 +101,7 @@ void setup(void)
 void loop(void){
  
   if (distanceSensor.checkForDataReady()){
-    int distance = distanceSensor.getDistance(); //Get the result of the measurement from the sensor
+    distance = distanceSensor.getDistance(); //Get the result of the measurement from the sensor
     distanceSensor.clearInterrupt();
     distanceSensor.stopRanging();
 
@@ -117,20 +119,35 @@ void loop(void){
     Serial.println("VL53L1X - Initiate measurement...");
 
     distanceSensor.startRanging(); //Write configuration bytes to initiate measurement
+
+    // Display the updated measurement in the screen
+    // Clear the buffer
+    display.clearDisplay();
+
+    // Sow "Text example" in the ssd1306 oled
+    display.setTextSize(2); // Draw 2X-scale text
+    display.setTextColor(SSD1306_WHITE);
+    display.setCursor(10, 0);
+    display.println(F("Text example"));
+    display.print(F("Distance(mm):"));
+    display.println(distance);
+    display.print(F("Temperature(°C) : "));
+    display.println(temp);
+    display.display();      // Show initial text
   }
   
   // Wait for lm73 conversion completion
   if(lm73.ready()){
     // Workout conversion time
-    byte time = ((byte)millis()) - lm73_start_time;
+    byte conversion_time = ((byte)millis()) - lm73_start_time;
 
     // Get the temperature
-    double temp = lm73.temperature();
+    temp = lm73.temperature();
 
-    Serial.print("LM73 - Conversion time: ");
-    Serial.println(time);
+    Serial.print("LM73 - Conversion time(ms): ");
+    Serial.println(conversion_time);
 
-    Serial.print("LM73 - Temperature: ");
+    Serial.print("LM73 - Temperature (°C): ");
     Serial.println(temp, 5);
 
     Serial.println();
@@ -142,5 +159,20 @@ void loop(void){
 
     // lm73 Start time
     lm73_start_time = millis();
+
+    // Display the updated measurement in the screen
+    // Clear the buffer
+    display.clearDisplay();
+
+    // Sow "Text example" in the ssd1306 oled
+    display.setTextSize(2); // Draw 2X-scale text
+    display.setTextColor(SSD1306_WHITE);
+    display.setCursor(10, 0);
+    display.println(F("Text example"));
+    display.print(F("Distance(mm):"));
+    display.println(distance);
+    display.print(F("Temperature(°C) : "));
+    display.println(temp);
+    display.display();      // Show initial text
   }
 }
