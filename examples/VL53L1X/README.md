@@ -21,4 +21,4 @@ After installing the library, restart the Arduino IDE.
 
 ## Examples ##
 
-* [ReadDistance](./Example1_ReadDistance/Example1_ReadDistance.ino)
+* [ReadDistance](./Example1_ReadDistance/Example1_ReadDistance.ino):  this is an example from the [VL53L1X Library](https://github.com/sparkfun/SparkFun_VL53L1X_Arduino_Library) that starts a new reading, waits until the distance measurement is ready and then shows the results in the serial monitor. Once the measurement is ready, it starts a new one and the cycle begins again.

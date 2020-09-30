@@ -21,4 +21,4 @@ After installing the library, restart the Arduino IDE.
 
 ## Examples ##
 
-* [SSD1306 128x64 I2C Demo](./ssd1306_128x64_i2c/ssd1306_128x64_i2c.ino)
+* [SSD1306 128x64 I2C Demo](./ssd1306_128x64_i2c/ssd1306_128x64_i2c.ino): this is an example from the [Adafruit SSD1306 Library](https://github.com/adafruit/Adafruit_SSD1306) that plays a demo, it tests all the different functions in the library.
