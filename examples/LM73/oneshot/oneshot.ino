@@ -45,13 +45,13 @@ void loop()
 	while(!lm73.ready());
 
 	// Workout conversion time
-	byte time = ((byte)millis()) - start;
+	byte time_conversion = ((byte)millis()) - start;
 
 	// Get the temperature
 	double temp = lm73.temperature();
 
 	Serial.print("Conversion time: ");
-	Serial.println(time);
+	Serial.println(time_conversion);
 
 	Serial.print("Temperature: ");
 	Serial.println(temp, 5);
