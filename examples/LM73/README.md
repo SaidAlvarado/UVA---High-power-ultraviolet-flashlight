@@ -12,3 +12,5 @@
 ## Examples ##
 
 * [Oneshot](./oneshot/oneshot.ino): this is an example from the [LM73 Library](https://github.com/zkemble/LM73) that periodically starts a new reading, waits until the measurement is ready and then shows the results in the serial monitor.
+
+- [Continuous Reading](./continuous_reading/continuous_reading.ino): this example takes a continuous temperature readings and displays the results each 1000 mseg in the terminal monitor (9600 Baud).

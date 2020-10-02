@@ -16,6 +16,8 @@ Main structure for the UVA, and examples for each sensor.
 
 - [Oneshot](examples/LM73/oneshot/oneshot.ino): this is an example from the [LM73 Library](https://github.com/zkemble/LM73) that starts a new reading, waits until the temperature measurement is ready and then shows the results in the serial monitor. Once the measurement is ready, it starts a new one and the cycle begins again.
 
+- [Continuous Reading](examples/LM73/continuous_reading/continuous_reading.ino): this example takes a continuous temperature readings and displays the results each 1000 mseg in the terminal monitor (9600 Baud).
+
 ### [VL53L1X Distance Sensor](examples/VL53L1X/README.md) ###
 
 - [ReadDistance](examples/VL53L1X/Example1_ReadDistance/Example1_ReadDistance.ino): this is an example from the [VL53L1X Library](https://github.com/sparkfun/SparkFun_VL53L1X_Arduino_Library) that starts a new reading, waits until the distance measurement is ready and then shows the results in the serial monitor. Once the measurement is ready, it starts a new one and the cycle begins again.

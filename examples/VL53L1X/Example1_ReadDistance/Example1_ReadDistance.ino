@@ -23,8 +23,8 @@
 #include "SparkFun_VL53L1X.h" //Click here to get the library: http://librarymanager/All#SparkFun_VL53L1X
 
 //Optional interrupt and shutdown pins.
-#define SHUTDOWN_PIN 2
-#define INTERRUPT_PIN 3
+//#define SHUTDOWN_PIN 2
+//#define INTERRUPT_PIN 3
 
 SFEVL53L1X distanceSensor;
 //Uncomment the following line to use the optional shutdown and interrupt pins.
