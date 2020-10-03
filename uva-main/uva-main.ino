@@ -78,6 +78,7 @@ void setup(void)
   display.clearDisplay();
 
   // Sow "Text example" in the ssd1306 oled
+  /*
   display.setTextSize(2); // Draw 2X-scale text
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(10, 0);
@@ -85,7 +86,7 @@ void setup(void)
   display.display();      // Show initial text
   
   Serial.println("VL53L1X - Initiate measurement...");
-  
+  */
   // Write configuration bytes to initiate measurement
   distanceSensor.startRanging();
 
@@ -96,6 +97,8 @@ void setup(void)
 
   // lm73 Start time
   lm73_start_time = millis();
+
+  OledDemo();
 }
 
 void loop(void){
@@ -124,7 +127,7 @@ void loop(void){
     // Clear the buffer
     display.clearDisplay();
 
-    // Sow "Text example" in the ssd1306 oled
+    // Sow "Text example" in the ssd1306 oled   
     display.setTextSize(2); // Draw 2X-scale text
     display.setTextColor(SSD1306_WHITE);
     display.setCursor(10, 0);
@@ -133,7 +136,8 @@ void loop(void){
     display.println(distance);
     display.print(F("Temperature(°C) : "));
     display.println(temp);
-    display.display();      // Show initial text
+    display.display();      
+    
   }
   
   // Wait for lm73 conversion completion
@@ -173,6 +177,210 @@ void loop(void){
     display.println(distance);
     display.print(F("Temperature(°C) : "));
     display.println(temp);
-    display.display();      // Show initial text
+    display.display();  
   }
+}
+
+void OledDemo() {
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,3, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,3, SSD1306_WHITE);
+  display.fillCircle(65,32,3, SSD1306_WHITE);
+  display.fillCircle(81,32,3, SSD1306_WHITE);
+  display.fillCircle(69,24,3, SSD1306_WHITE);
+  display.fillCircle(69,40,3, SSD1306_WHITE);
+  display.fillCircle(77,24,3, SSD1306_WHITE);
+  display.fillCircle(77,40,3, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,3, SSD1306_WHITE);
+  display.fillCircle(65,32,3, SSD1306_WHITE);
+  display.fillCircle(81,32,3, SSD1306_WHITE);
+  display.fillCircle(69,24,3, SSD1306_WHITE);
+  display.fillCircle(69,40,3, SSD1306_WHITE);
+  display.fillCircle(77,24,3, SSD1306_WHITE);
+  display.fillCircle(77,40,3, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,15, SSD1306_WHITE);
+  display.fillCircle(73,32,13, SSD1306_BLACK);
+  display.fillRect(56,15,73,49, SSD1306_BLACK);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,22, SSD1306_WHITE);
+  display.fillCircle(73,32,19, SSD1306_BLACK);
+  display.fillRect(51,10,73,54, SSD1306_BLACK);
+  display.fillCircle(73,32,15, SSD1306_WHITE);
+  display.fillCircle(73,32,13, SSD1306_BLACK);
+  display.fillRect(56,15,73,49, SSD1306_BLACK);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,28, SSD1306_WHITE);
+  display.fillCircle(73,32,26, SSD1306_BLACK);
+  display.fillRect(45,4,73,60, SSD1306_BLACK);
+  display.fillCircle(73,32,22, SSD1306_WHITE);
+  display.fillCircle(73,32,19, SSD1306_BLACK);
+  display.fillRect(51,10,73,54, SSD1306_BLACK);
+  display.fillCircle(73,32,15, SSD1306_WHITE);
+  display.fillCircle(73,32,13, SSD1306_BLACK);
+  display.fillRect(56,15,73,49, SSD1306_BLACK);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,28, SSD1306_WHITE);
+  display.fillCircle(73,32,26, SSD1306_BLACK);
+  display.fillRect(45,4,73,60, SSD1306_BLACK);
+  display.fillCircle(73,32,22, SSD1306_WHITE);
+  display.fillCircle(73,32,19, SSD1306_BLACK);
+  display.fillRect(51,10,73,54, SSD1306_BLACK);
+  display.fillCircle(73,32,15, SSD1306_WHITE);
+  display.fillCircle(73,32,13, SSD1306_BLACK);
+  display.fillRect(56,15,73,49, SSD1306_BLACK);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,32, SSD1306_WHITE);
+  display.fillCircle(73,32,29, SSD1306_BLACK);
+  display.fillRect(73-32,32-32,73,32+32, SSD1306_BLACK);
+  display.fillCircle(73,32,28, SSD1306_WHITE);
+  display.fillCircle(73,32,26, SSD1306_BLACK);
+  display.fillRect(45,4,73,60, SSD1306_BLACK);
+  display.fillCircle(73,32,22, SSD1306_WHITE);
+  display.fillCircle(73,32,19, SSD1306_BLACK);
+  display.fillRect(51,10,73,54, SSD1306_BLACK);
+  display.fillCircle(73,32,15, SSD1306_WHITE);
+  display.fillCircle(73,32,13, SSD1306_BLACK);
+  display.fillRect(56,15,73,49, SSD1306_BLACK);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,32, SSD1306_WHITE);
+  display.fillCircle(73,32,29, SSD1306_BLACK);
+  display.fillRect(73-32,32-32,73,32+32, SSD1306_BLACK);
+  display.fillCircle(73,32,28, SSD1306_WHITE);
+  display.fillCircle(73,32,26, SSD1306_BLACK);
+  display.fillRect(45,4,73,60, SSD1306_BLACK);
+  display.fillCircle(73,32,22, SSD1306_WHITE);
+  display.fillCircle(73,32,19, SSD1306_BLACK);
+  display.fillRect(51,10,73,54, SSD1306_BLACK);
+  display.fillCircle(73,32,15, SSD1306_WHITE);
+  display.fillCircle(73,32,13, SSD1306_BLACK);
+  display.fillRect(56,15,73,49, SSD1306_BLACK);
+  display.fillCircle(73,32,3, SSD1306_WHITE);
+  display.fillCircle(65,32,3, SSD1306_WHITE);
+  display.fillCircle(81,32,3, SSD1306_WHITE);
+  display.fillCircle(69,24,3, SSD1306_WHITE);
+  display.fillCircle(69,40,3, SSD1306_WHITE);
+  display.fillCircle(77,24,3, SSD1306_WHITE);
+  display.fillCircle(77,40,3, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,32, SSD1306_WHITE);
+  display.fillCircle(73,32,29, SSD1306_BLACK);
+  display.fillRect(73-32,32-32,73,32+32, SSD1306_BLACK);
+  display.fillCircle(73,32,28, SSD1306_WHITE);
+  display.fillCircle(73,32,26, SSD1306_BLACK);
+  display.fillRect(45,4,73,60, SSD1306_BLACK);
+  display.fillCircle(73,32,22, SSD1306_WHITE);
+  display.fillCircle(73,32,19, SSD1306_BLACK);
+  display.fillRect(51,10,73,54, SSD1306_BLACK);
+  display.fillCircle(73,32,15, SSD1306_WHITE);
+  display.fillCircle(73,32,13, SSD1306_BLACK);
+  display.fillRect(56,15,73,49, SSD1306_BLACK);
+  display.fillCircle(73,32,3, SSD1306_WHITE);
+  display.fillCircle(65,32,3, SSD1306_WHITE);
+  display.fillCircle(81,32,3, SSD1306_WHITE);
+  display.fillCircle(69,24,3, SSD1306_WHITE);
+  display.fillCircle(69,40,3, SSD1306_WHITE);
+  display.fillCircle(77,24,3, SSD1306_WHITE);
+  display.fillCircle(77,40,3, SSD1306_WHITE);
+  display.drawLine(50,32,59,32, SSD1306_WHITE);
+  display.drawLine(64,42,58,48, SSD1306_WHITE);
+  display.drawLine(64,42,58,48, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.drawRect(114,23,121,1, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.drawRect(114,23,121,1, SSD1306_WHITE);
+  display.fillRect(117,20,118,19, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.drawRect(114,23,121,1, SSD1306_WHITE);
+  display.fillRect(117,20,118,19, SSD1306_WHITE);
+  display.fillRect(117,15,118,14, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+
+  display.clearDisplay(); // Clear display buffer
+  display.drawRect(114,23,121,1, SSD1306_WHITE);
+  display.fillRect(117,20,118,19, SSD1306_WHITE);
+  display.fillRect(117,15,118,14, SSD1306_WHITE);
+  display.fillRect(117,5,118,4, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+    
+  display.clearDisplay(); // Clear display buffer
+  display.drawRect(114,23,121,1, SSD1306_WHITE);
+  display.fillRect(117,20,118,19, SSD1306_WHITE);
+  display.fillRect(117,15,118,14, SSD1306_WHITE);
+  display.fillRect(117,5,118,4, SSD1306_WHITE);
+  display.fillRect(117,20,118,19, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(1000);
+  
+  display.clearDisplay(); // Clear display buffer
+  display.fillCircle(73,32,32, SSD1306_WHITE);
+  display.fillCircle(73,32,29, SSD1306_BLACK);
+  display.fillRect(73-32,32-32,73,32+32, SSD1306_BLACK);
+  display.fillCircle(73,32,28, SSD1306_WHITE);
+  display.fillCircle(73,32,26, SSD1306_BLACK);
+  display.fillRect(45,4,73,60, SSD1306_BLACK);
+  display.fillCircle(73,32,22, SSD1306_WHITE);
+  display.fillCircle(73,32,19, SSD1306_BLACK);
+  display.fillRect(51,10,73,54, SSD1306_BLACK);
+  display.fillCircle(73,32,15, SSD1306_WHITE);
+  display.fillCircle(73,32,13, SSD1306_BLACK);
+  display.fillRect(56,15,73,49, SSD1306_BLACK);
+  display.fillCircle(73,32,3, SSD1306_WHITE);
+  display.fillCircle(65,32,3, SSD1306_WHITE);
+  display.fillCircle(81,32,3, SSD1306_WHITE);
+  display.fillCircle(69,24,3, SSD1306_WHITE);
+  display.fillCircle(69,40,3, SSD1306_WHITE);
+  display.fillCircle(77,24,3, SSD1306_WHITE);
+  display.fillCircle(77,40,3, SSD1306_WHITE);
+  display.drawLine(50,32,59,32, SSD1306_WHITE);
+  display.drawLine(64,42,58,48, SSD1306_WHITE);
+  display.drawLine(64,42,58,48, SSD1306_WHITE);
+  display.drawRect(114,23,121,1, SSD1306_WHITE);
+  display.fillRect(117,20,118,19, SSD1306_WHITE);
+  display.fillRect(117,15,118,14, SSD1306_WHITE);
+  display.fillRect(117,5,118,4, SSD1306_WHITE);
+  display.fillRect(117,20,118,19, SSD1306_WHITE);
+  display.display(); // Update screen with each newly-drawn line
+  delay(5000);
 }
