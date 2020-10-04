@@ -51,8 +51,17 @@ unsigned long last_refresh;   // ms
 
 int battery_percent = 100;    // %
 
+// Define the pin which controls the Led PWM
+int pmw_pin = 5;
+
+
 void setup(void)
 {
+
+  //Make sure the LEDs are off
+  pinMode(pmw_pin, OUTPUT);
+  digitalWrite(pmw_pin, LOW);
+
   Wire.begin();
   Serial.begin(115200);
 
