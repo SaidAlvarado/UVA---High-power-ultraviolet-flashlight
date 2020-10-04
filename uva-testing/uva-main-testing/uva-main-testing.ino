@@ -278,10 +278,12 @@ void set_distance_monitor(int distance){
     display.fillCircle(77,24,3, SSD1306_WHITE);
     display.fillCircle(77,40,3, SSD1306_WHITE);
   }else if(distance < 40){
-    display.fillCircle(73,32,15, SSD1306_WHITE);
-    display.fillCircle(73,32,13, SSD1306_BLACK);
+    //display.fillCircle(73,32,15, SSD1306_WHITE);
+    //display.fillCircle(73,32,13, SSD1306_BLACK);
+    display.drawCircle(73,32,15, SSD1306_WHITE);
+    display.drawCircle(73,32,14, SSD1306_WHITE);
     display.fillRect(56,15,73,49, SSD1306_BLACK);
-
+    
     display.fillCircle(73,32,3, SSD1306_WHITE);
     display.fillCircle(65,32,3, SSD1306_WHITE);
     display.fillCircle(81,32,3, SSD1306_WHITE);
@@ -290,11 +292,16 @@ void set_distance_monitor(int distance){
     display.fillCircle(77,24,3, SSD1306_WHITE);
     display.fillCircle(77,40,3, SSD1306_WHITE);
   }else if(distance < 65){
-    display.fillCircle(73,32,22, SSD1306_WHITE);
-    display.fillCircle(73,32,19, SSD1306_BLACK);
+    //display.fillCircle(73,32,22, SSD1306_WHITE);
+    //display.fillCircle(73,32,19, SSD1306_BLACK);
+    display.drawCircle(73,32,22, SSD1306_WHITE);
+    display.drawCircle(73,32,21, SSD1306_WHITE);
+    display.drawCircle(73,32,20, SSD1306_WHITE);
     display.fillRect(51,10,73,54, SSD1306_BLACK);
-    display.fillCircle(73,32,15, SSD1306_WHITE);
-    display.fillCircle(73,32,13, SSD1306_BLACK);
+    //display.fillCircle(73,32,15, SSD1306_WHITE);
+    //display.fillCircle(73,32,13, SSD1306_BLACK);
+    display.drawCircle(73,32,15, SSD1306_WHITE);
+    display.drawCircle(73,32,14, SSD1306_WHITE);
     display.fillRect(56,15,73,49, SSD1306_BLACK);
 
     display.fillCircle(73,32,3, SSD1306_WHITE);
@@ -305,11 +312,16 @@ void set_distance_monitor(int distance){
     display.fillCircle(77,24,3, SSD1306_WHITE);
     display.fillCircle(77,40,3, SSD1306_WHITE);
   }else if(distance < 75){
-    display.fillCircle(73,32,22, SSD1306_WHITE);
-    display.fillCircle(73,32,19, SSD1306_BLACK);
+    //display.fillCircle(73,32,22, SSD1306_WHITE);
+    //display.fillCircle(73,32,19, SSD1306_BLACK);
+    display.drawCircle(73,32,22, SSD1306_WHITE);
+    display.drawCircle(73,32,21, SSD1306_WHITE);
+    display.drawCircle(73,32,20, SSD1306_WHITE);
     display.fillRect(51,10,73,54, SSD1306_BLACK);
-    display.fillCircle(73,32,15, SSD1306_WHITE);
-    display.fillCircle(73,32,13, SSD1306_BLACK);
+    //display.fillCircle(73,32,15, SSD1306_WHITE);
+    //display.fillCircle(73,32,13, SSD1306_BLACK);   
+    display.drawCircle(73,32,15, SSD1306_WHITE);
+    display.drawCircle(73,32,14, SSD1306_WHITE);
     display.fillRect(56,15,73,49, SSD1306_BLACK);
 
     display.fillCircle(73,32,3, SSD1306_WHITE);
@@ -322,16 +334,22 @@ void set_distance_monitor(int distance){
 
     display.drawLine(50,32,59,32, SSD1306_WHITE);
     display.drawLine(64,42,58,48, SSD1306_WHITE);
-    display.drawLine(64,42,58,48, SSD1306_WHITE);
+    display.drawLine(64,20,58,14, SSD1306_WHITE);
   }else if(distance < 100){
-    display.fillCircle(73,32,28, SSD1306_WHITE);
-    display.fillCircle(73,32,26, SSD1306_BLACK);
-    display.fillRect(45,4,73,60, SSD1306_BLACK);
-    display.fillCircle(73,32,22, SSD1306_WHITE);
-    display.fillCircle(73,32,19, SSD1306_BLACK);
+    //display.fillCircle(73,32,28, SSD1306_WHITE);
+    //display.fillCircle(73,32,26, SSD1306_BLACK);
+    display.drawCircle(73,32,28, SSD1306_WHITE);
+    display.drawCircle(73,32,27, SSD1306_WHITE);
+    display.fillRect(45,4,73,60, SSD1306_BLACK);    
+    //display.fillCircle(73,32,22, SSD1306_WHITE);
+    //display.fillCircle(73,32,19, SSD1306_BLACK);
+    display.drawCircle(73,32,22, SSD1306_WHITE);
+    display.drawCircle(73,32,21, SSD1306_WHITE);
+    display.drawCircle(73,32,20, SSD1306_WHITE);
     display.fillRect(51,10,73,54, SSD1306_BLACK);
-    display.fillCircle(73,32,15, SSD1306_WHITE);
-    display.fillCircle(73,32,13, SSD1306_BLACK);
+    //display.fillCircle(73,32,15, SSD1306_WHITE);
+    //display.fillCircle(73,32,13, SSD1306_BLACK);
+    display.drawCircle(73,32,15, SSD1306_WHITE);
     display.fillRect(56,15,73,49, SSD1306_BLACK);
 
     display.fillCircle(73,32,3, SSD1306_WHITE);
@@ -342,17 +360,26 @@ void set_distance_monitor(int distance){
     display.fillCircle(77,24,3, SSD1306_WHITE);
     display.fillCircle(77,40,3, SSD1306_WHITE);
   }else if(distance < 150){
-    display.fillCircle(73,32,32, SSD1306_WHITE);
-    display.fillCircle(73,32,29, SSD1306_BLACK);
+    //display.fillCircle(73,32,32, SSD1306_WHITE);
+    //display.fillCircle(73,32,29, SSD1306_BLACK);
+    display.drawCircle(73,32,32, SSD1306_WHITE);
+    display.drawCircle(73,32,31, SSD1306_WHITE);
+    display.drawCircle(73,32,30, SSD1306_WHITE);
     display.fillRect(73-32,32-32,73,32+32, SSD1306_BLACK);
-    display.fillCircle(73,32,28, SSD1306_WHITE);
-    display.fillCircle(73,32,26, SSD1306_BLACK);
+    //display.fillCircle(73,32,28, SSD1306_WHITE);
+    //display.fillCircle(73,32,26, SSD1306_BLACK);
+    display.drawCircle(73,32,28, SSD1306_WHITE);
+    display.drawCircle(73,32,27, SSD1306_WHITE);
     display.fillRect(45,4,73,60, SSD1306_BLACK);
-    display.fillCircle(73,32,22, SSD1306_WHITE);
-    display.fillCircle(73,32,19, SSD1306_BLACK);
+    //display.fillCircle(73,32,22, SSD1306_WHITE);
+    //display.fillCircle(73,32,19, SSD1306_BLACK);
+    display.drawCircle(73,32,22, SSD1306_WHITE);
+    display.drawCircle(73,32,21, SSD1306_WHITE);
+    display.drawCircle(73,32,20, SSD1306_WHITE);
     display.fillRect(51,10,73,54, SSD1306_BLACK);
-    display.fillCircle(73,32,15, SSD1306_WHITE);
-    display.fillCircle(73,32,13, SSD1306_BLACK);
+    //display.fillCircle(73,32,15, SSD1306_WHITE);
+    //display.fillCircle(73,32,13, SSD1306_BLACK);
+    display.drawCircle(73,32,15, SSD1306_WHITE);
     display.fillRect(56,15,73,49, SSD1306_BLACK);
 
     display.fillCircle(73,32,3, SSD1306_WHITE);
@@ -363,8 +390,11 @@ void set_distance_monitor(int distance){
     display.fillCircle(77,24,3, SSD1306_WHITE);
     display.fillCircle(77,40,3, SSD1306_WHITE);
   }else{
-    display.fillCircle(73,32,32, SSD1306_WHITE);
-    display.fillCircle(73,32,29, SSD1306_BLACK);
+    //display.fillCircle(73,32,32, SSD1306_WHITE);
+    //display.fillCircle(73,32,29, SSD1306_BLACK);
+    display.drawCircle(73,32,32, SSD1306_WHITE);
+    display.drawCircle(73,32,31, SSD1306_WHITE);
+    display.drawCircle(73,32,30, SSD1306_WHITE);
     display.fillRect(73-32,32-32,73,32+32, SSD1306_BLACK);
 
     display.fillCircle(73,32,3, SSD1306_WHITE);
