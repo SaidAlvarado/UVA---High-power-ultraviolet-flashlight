@@ -202,72 +202,176 @@ void loop(void){
 void OledDemo() {
 
   display.clearDisplay(); // Clear display buffer
-  set_distance_monitor(5);
+  set_distance_monitor(5); 
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("0.1"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(20);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("0.2"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(30);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("0.3"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(50);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("0.4"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(70);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("0.5"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(80);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("0.6"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(120);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("0.7"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(160);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("0.8"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(160);
   set_battery_charge_monitor(5);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("0.9"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(160);
   set_battery_charge_monitor(20);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("1.0"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(160);
   set_battery_charge_monitor(40);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("1.1"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(160);
   set_battery_charge_monitor(60);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("1.2"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(160);
   set_battery_charge_monitor(80);
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 3);
+  display.println(F("UVA"));
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 80);
+  display.println(F("1.3"));
   display.display(); // Update screen with each newly-drawn line
   delay(5000);
 }
@@ -328,9 +432,9 @@ void set_distance_monitor(int distance){
     display.fillCircle(32-8,64+5,3, SSD1306_WHITE);
     display.fillCircle(32-8,64-5,3, SSD1306_WHITE);
 
-    display.drawLine(32,50,32,59, SSD1306_WHITE);
-    display.drawLine(42,64,48,58, SSD1306_WHITE);
-    display.drawLine(20,64,14,58, SSD1306_WHITE);
+    display.drawLine(32,64+9+8,32,64+9+8+9, SSD1306_WHITE);
+    display.drawLine(32+8+8,64+5+5,32+8+8+9,64+5+5+9, SSD1306_WHITE);
+    display.drawLine(32-8-8,64+5+5,32-8-8-9,64+5+5+9, SSD1306_WHITE);
 
   }else if(distance >= 75 && distance < 100){
     display.drawCircle(32,64,25, SSD1306_WHITE);
