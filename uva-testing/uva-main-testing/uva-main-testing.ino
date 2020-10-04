@@ -331,7 +331,7 @@ void set_distance_monitor(int distance){
     display.drawLine(32,50,32,59, SSD1306_WHITE);
     display.drawLine(42,64,48,58, SSD1306_WHITE);
     display.drawLine(20,64,14,58, SSD1306_WHITE);
-    
+
   }else if(distance >= 75 && distance < 100){
     display.drawCircle(32,64,25, SSD1306_WHITE);
     display.drawCircle(32,64,24, SSD1306_WHITE);
@@ -392,21 +392,21 @@ void set_distance_monitor(int distance){
 
 void set_battery_charge_monitor(int percent){
   if(percent < 10){
-    display.drawRect(42,3,19,7, SSD1306_WHITE);
+    display.drawRect(41,3,20,9, SSD1306_WHITE);
   }else if(percent < 32){
-    display.drawRect(42,3,19,7, SSD1306_WHITE);
+    display.drawRect(41,3,20,9, SSD1306_WHITE);
     display.fillRect(56,6,3,3, SSD1306_WHITE);
   }else if(percent >= 32 && percent < 55){
-    display.drawRect(42,3,19,7, SSD1306_WHITE);
+    display.drawRect(41,3,20,9, SSD1306_WHITE);
     display.fillRect(56,6,3,3, SSD1306_WHITE);
     display.fillRect(52,6,3,3, SSD1306_WHITE);
   }else if(percent >= 55 && percent < 77){
-    display.drawRect(42,3,19,7, SSD1306_WHITE);
+    display.drawRect(41,3,20,9, SSD1306_WHITE);
     display.fillRect(56,6,3,3, SSD1306_WHITE);
     display.fillRect(52,6,3,3, SSD1306_WHITE);
     display.fillRect(48,6,3,3, SSD1306_WHITE);
   }else if(percent >= 77 && percent < 100){
-    display.drawRect(42,3,19,7, SSD1306_WHITE);
+    display.drawRect(41,3,20,9, SSD1306_WHITE);
     display.fillRect(56,6,3,3, SSD1306_WHITE);
     display.fillRect(52,6,3,3, SSD1306_WHITE);
     display.fillRect(48,6,3,3, SSD1306_WHITE);
