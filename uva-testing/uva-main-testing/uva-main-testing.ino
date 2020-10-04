@@ -37,16 +37,15 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire);
 
 
-// SFEVL53L1X distanceSensor;
-// int distance;
+SFEVL53L1X distanceSensor;
+int distance;
 //Uncomment the following line to use the optional shutdown and interrupt pins.
 //SFEVL53L1X distanceSensor(Wire, SHUTDOWN_PIN, INTERRUPT_PIN);
 
-// Temperature Sensor Object
-// LM73 lm73 = LM73();
-// byte lm73_start_time;
-// double temp;
-
+//Temperature Sensor Object
+LM73 lm73 = LM73();
+byte lm73_start_time;
+double temp;
 unsigned long last_refresh;   // ms
 
 int battery_percent = 100;    // %
@@ -62,19 +61,15 @@ void setup(void)
   pinMode(pmw_pin, OUTPUT);
   digitalWrite(pmw_pin, LOW);
 
-  Serial.begin(115200);
   // OLED config
 
   // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
   if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D for 128x64
-    Serial.println(F("SSD1306 allocation failed"));
     while (1);
   }
 
   // Show initial display buffer contents on the screen --
   // the library initializes this with an Adafruit splash screen.
-  // display.display();
-
   display.setRotation(3);
   display.clearDisplay();
   display.drawRect(0,0,50,50, SSD1306_WHITE);
@@ -86,117 +81,99 @@ void setup(void)
   display.clearDisplay();
 
   // Screen demo
-  OledDemo();
+  // OledDemo();
 
-  // VL53L1X - Distance sensor config
-  // Wire.begin();
 
-  // Serial.println("VL53L1X Qwiic Test");
+    // VL53L1X - Distance sensor config
+    Wire.begin();
+    distanceSensor.begin();
   //
-  // if (distanceSensor.begin() != 0) //Begin returns 0 on a good init
-  // {
-  //   Serial.println("Sensor failed to begin. Please check wiring. Freezing...");
-  //   // Clear the buffer
-  //   display.clearDisplay();
-  //   // Show distance and temperature
-  //   display.setTextSize(2); // Draw 2X-scale text
-  //   display.setTextColor(SSD1306_WHITE);
-  //   display.setCursor(2, 2);
-  //   display.print(F("VL53L1X failed to begin"));
-  //   display.display();
-  //   while (1);
-  // }
-  // Serial.println("Sensor online!");
+  //  if (distanceSensor.begin() != 0) //Begin returns 0 on a good init
+  //  {
+  //    // Clear the buffer
+  //    display.clearDisplay();
+  //    // Show distance and temperature
+  //    display.setTextSize(2); // Draw 2X-scale text
+  //    display.setTextColor(SSD1306_WHITE);
+  //    display.setCursor(2, 2);
+  //    display.print(F("VL53L1X failed to begin"));
+  //    display.display();
+  //    while (1);
+  //  }
 
-  // LM73 - Temperature sensor config
+    // Write configuration bytes to initiate measurement
+    distanceSensor.startRanging();
 
-  // lm73.begin(LM73_0_I2C_GND);
-  // lm73.setResolution(LM73_RESOLUTION_14BIT); // 14 bit
-  // lm73.power(LM73_POWER_OFF); // Turn off sensor (one shot temperature conversion)
-  //
-  // // Write configuration bytes to initiate measurement
-  // distanceSensor.startRanging();
-  //
-  // Serial.println("LM73 Starting one shot conversion...");
-  // // Begin first one shot conversion
-  // // Don't turn on sensor, that's done automatically
-  // lm73.startOneShot();
-  //
-  // // lm73 Start time
-  // lm73_start_time = millis();
+  //  LM73 - Temperature sensor config
+
+    lm73.begin(LM73_0_I2C_GND);
+    lm73.setResolution(LM73_RESOLUTION_14BIT); // 14 bit
+    lm73.power(LM73_POWER_OFF); // Turn off sensor (one shot temperature conversion)
+
+
+    // Begin first one shot conversion
+    // Don't turn on sensor, that's done automatically
+    lm73.startOneShot();
+
+    // lm73 Start time
+    lm73_start_time = millis();
 }
 
 void loop(void){
 
-  // if (distanceSensor.checkForDataReady()){
-  //   distance = distanceSensor.getDistance(); //Get the result of the measurement from the sensor
-  //   distanceSensor.clearInterrupt();
-  //   distanceSensor.stopRanging();
-  //
-  //   Serial.print("VL53L1X - Distance(mm): ");
-  //   Serial.print(distance);
-  //
-  //   float distanceInches = distance * 0.0393701;
-  //   float distanceFeet = distanceInches / 12.0;
-  //
-  //   Serial.print("\tDistance(ft): ");
-  //   Serial.print(distanceFeet, 2);
-  //
-  //   Serial.println();
-  //
-  //   Serial.println("VL53L1X - Initiate measurement...");
-  //
-  //   distanceSensor.startRanging(); //Write configuration bytes to initiate measurement
-  // }
 
-  // // Wait for lm73 conversion completion
-  // if(lm73.ready()){
-  //   // Workout conversion time
-  //   byte conversion_time = ((byte)millis()) - lm73_start_time;
-  //
-  //   // Get the temperature
-  //   temp = lm73.temperature();
-  //
-  //   Serial.print("LM73 - Conversion time(ms): ");
-  //   Serial.println(conversion_time);
-  //
-  //   Serial.print("LM73 - Temperature (°C): ");
-  //   Serial.println(temp, 5);
-  //
-  //   Serial.println();
-  //
-  //   Serial.println("LM73 Starting one shot conversion...");
-  //   // Begin one shot conversion
-  //   // Don't turn on sensor, that's done automatically
-  //   lm73.startOneShot();
-  //
-  //   // lm73 Start time
-  //   lm73_start_time = millis();
-  // }
+    if (distanceSensor.checkForDataReady()){
+      distance = distanceSensor.getDistance(); //Get the result of the measurement from the sensor
+      distanceSensor.clearInterrupt();
+      distanceSensor.stopRanging();
 
-  // if(millis()-last_refresh > REFRESH_PERIOD){
-  //   // Display the updated measurement in the screen
-  //   // Clear the buffer
-  //   display.clearDisplay();
-  //
-  //   // Display the distance monitor
-  //   set_distance_monitor(distance);
-  //
-  //   // Display the battery charge monitor
-  //   set_battery_charge_monitor(battery_percent);
-  //
-  //   // Show distance and temperature
-  //   display.setTextSize(2); // Draw 2X-scale text
-  //   display.setTextColor(SSD1306_WHITE);
-  //   display.setCursor(0, 0);
-  //   display.print(F("D(mm):"));
-  //   display.println(distance);
-  //   display.print(F("T(°C):"));
-  //   display.println(temp);
-  //   display.display();
-  //
-  //   last_refresh = millis();
-  // }
+
+      float distanceInches = distance * 0.0393701;
+      float distanceFeet = distanceInches / 12.0;
+
+
+
+
+      distanceSensor.startRanging(); //Write configuration bytes to initiate measurement
+    }
+
+    // Wait for lm73 conversion completion
+    if(lm73.ready()){
+      // Workout conversion time
+      byte conversion_time = ((byte)millis()) - lm73_start_time;
+
+      // Get the temperature
+      temp = lm73.temperature();
+      // Begin one shot conversion
+      // Don't turn on sensor, that's done automatically
+      lm73.startOneShot();
+      // lm73 Start time
+      lm73_start_time = millis();
+    }
+
+    if(millis()-last_refresh > REFRESH_PERIOD){
+      // Display the updated measurement in the screen
+      // Clear the buffer
+      display.clearDisplay();
+
+      // Display the distance monitor
+      // set_distance_monitor(distance);
+
+      // Display the battery charge monitor
+      // set_battery_charge_monitor(battery_percent);
+
+      // Show distance and temperature
+      display.setTextSize(1); // Draw 2X-scale text
+      display.setTextColor(SSD1306_WHITE);
+      display.setCursor(0, 0);
+      display.print(F("D(mm):"));
+      display.println(distance);
+      display.print(F("T(C):"));
+      display.println(temp);
+      display.display();
+
+      last_refresh = millis();
+    }
 }
 
 void OledDemo() {
