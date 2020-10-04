@@ -186,7 +186,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("0.1"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -199,7 +199,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("0.2"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -212,7 +212,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("0.3"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -225,7 +225,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("0.4"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -238,7 +238,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("0.5"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -251,7 +251,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("0.6"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -264,7 +264,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("0.7"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -277,7 +277,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("0.8"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -291,7 +291,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("0.9"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -305,7 +305,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("1.0"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -319,7 +319,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("1.1"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -333,7 +333,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("1.2"));
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
@@ -347,7 +347,7 @@ void OledDemo() {
   display.println(F("UVA"));
   display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 80);
+  display.setCursor(3, 100);
   display.println(F("1.3"));
   display.display(); // Update screen with each newly-drawn line
   delay(5000);
