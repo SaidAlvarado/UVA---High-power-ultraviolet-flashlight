@@ -184,10 +184,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("0.1"));
+  set_cronometer_monitor(0);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -197,10 +194,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("0.2"));
+  set_cronometer_monitor(900);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -210,10 +204,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("0.3"));
+  set_cronometer_monitor(1000);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -223,10 +214,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("0.4"));
+  set_cronometer_monitor(1100);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -236,10 +224,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("0.5"));
+  set_cronometer_monitor(99000);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -249,10 +234,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("0.6"));
+  set_cronometer_monitor(100000);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -262,10 +244,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("0.7"));
+  set_cronometer_monitor(101000);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -275,10 +254,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("0.8"));
+  set_cronometer_monitor(102000);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -289,10 +265,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("0.9"));
+  set_cronometer_monitor(996000);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -303,10 +276,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("1.0"));
+  set_cronometer_monitor(997000);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -317,10 +287,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("1.1"));
+  set_cronometer_monitor(998000);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -331,10 +298,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("1.2"));
+  set_cronometer_monitor(999000);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
 
@@ -345,10 +309,7 @@ void OledDemo() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(3, 3);
   display.println(F("UVA"));
-  display.setTextSize(3);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(3, 100);
-  display.println(F("1.3"));
+  set_cronometer_monitor(1000000);
   display.display(); // Update screen with each newly-drawn line
   delay(5000);
 }
@@ -493,4 +454,22 @@ void set_battery_charge_monitor(int percent){
     display.fillRect(48,6,3,3, SSD1306_WHITE);
     display.fillRect(44,6,3,3, SSD1306_WHITE);
   }
+}
+
+void set_cronometer_monitor(unsigned long time_since_start){
+  float time_diff = time_since_start/1000.0;
+  String cronom_value = "";
+  if(time_diff < 10.0){
+    cronom_value = String(time_diff, 1);   
+  }else if (time_diff >= 10.0 && time_diff < 100.0){
+    cronom_value = "0" + String(floor(time_diff),0);
+  }else if (time_diff >= 100.0 && time_diff < 1000.0){
+    cronom_value = String(floor(time_diff),0);
+  }else{
+    cronom_value = "999";
+  }
+  display.setTextSize(3);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(3, 100);
+  display.println(cronom_value);
 }
