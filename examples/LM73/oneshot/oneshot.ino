@@ -23,7 +23,7 @@ void setup()
 {
 	Serial.begin(9600);
 
-	lm73.begin(LM73_0_I2C_FLOAT);
+	lm73.begin(LM73_0_I2C_GND);
 	lm73.setResolution(LM73_RESOLUTION_14BIT); // 14 bit
 	lm73.power(LM73_POWER_OFF); // Turn off sensor (one shot temperature conversion)
 }
@@ -34,7 +34,7 @@ void loop()
 
 	Serial.println("Starting one shot conversion...");
 
-	// Begin one shot conversion 
+	// Begin one shot conversion
 	// Don't turn on sensor, that's done automatically
 	lm73.startOneShot();
 

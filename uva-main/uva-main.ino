@@ -1,9 +1,9 @@
 /*
-  VL53L1X: 
+  VL53L1X:
   Reading distance from the laser based VL53L1X
   This example prints the distance to an object.
   Are you getting weird readings? Be sure the vacuum tape has been removed from the sensor.
-  
+
   LM73 Temperature Sensor
   Low power one shot temperature conversion
   A4 -> SDA
@@ -57,13 +57,13 @@ void setup(void)
   Serial.begin(115200);
 
   // OLED config
-  
+
   // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
   if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3D)) { // Address 0x3D for 128x64
     Serial.println(F("SSD1306 allocation failed"));
     while (1);
   }
-  
+
   // Show initial display buffer contents on the screen --
   // the library initializes this with an Adafruit splash screen.
   display.display();
@@ -82,20 +82,20 @@ void setup(void)
   {
     Serial.println("Sensor failed to begin. Please check wiring. Freezing...");
     // Clear the buffer
-    display.clearDisplay(); 
+    display.clearDisplay();
     // Show distance and temperature
     display.setTextSize(2); // Draw 2X-scale text
     display.setTextColor(SSD1306_WHITE);
     display.setCursor(2, 2);
     display.print(F("VL53L1X failed to begin"));
-    display.display();  
+    display.display();
     while (1);
   }
   Serial.println("Sensor online!");
 
   // LM73 - Temperature sensor config
-  
-  lm73.begin(LM73_0_I2C_FLOAT);
+
+  lm73.begin(LM73_0_I2C_GND);
   lm73.setResolution(LM73_RESOLUTION_14BIT); // 14 bit
   lm73.power(LM73_POWER_OFF); // Turn off sensor (one shot temperature conversion)
 
@@ -103,16 +103,16 @@ void setup(void)
   distanceSensor.startRanging();
 
   Serial.println("LM73 Starting one shot conversion...");
-  // Begin first one shot conversion 
+  // Begin first one shot conversion
   // Don't turn on sensor, that's done automatically
   lm73.startOneShot();
 
   // lm73 Start time
-  lm73_start_time = millis(); 
+  lm73_start_time = millis();
 }
 
 void loop(void){
- 
+
   if (distanceSensor.checkForDataReady()){
     distance = distanceSensor.getDistance(); //Get the result of the measurement from the sensor
     distanceSensor.clearInterrupt();
@@ -131,9 +131,9 @@ void loop(void){
 
     Serial.println("VL53L1X - Initiate measurement...");
 
-    distanceSensor.startRanging(); //Write configuration bytes to initiate measurement  
+    distanceSensor.startRanging(); //Write configuration bytes to initiate measurement
   }
-  
+
   // Wait for lm73 conversion completion
   if(lm73.ready()){
     // Workout conversion time
@@ -151,7 +151,7 @@ void loop(void){
     Serial.println();
 
     Serial.println("LM73 Starting one shot conversion...");
-    // Begin one shot conversion 
+    // Begin one shot conversion
     // Don't turn on sensor, that's done automatically
     lm73.startOneShot();
 
@@ -169,7 +169,7 @@ void loop(void){
 
     // Display the battery charge monitor
     set_battery_charge_monitor(battery_percent);
-    
+
     // Show distance and temperature
     display.setTextSize(2); // Draw 2X-scale text
     display.setTextColor(SSD1306_WHITE);
@@ -178,8 +178,8 @@ void loop(void){
     display.println(distance);
     display.print(F("T(°C):"));
     display.println(temp);
-    display.display();  
-    
+    display.display();
+
     last_refresh = millis();
   }
 }
@@ -249,7 +249,7 @@ void OledDemo() {
   set_battery_charge_monitor(60);
   display.display(); // Update screen with each newly-drawn line
   delay(1000);
-    
+
   display.clearDisplay(); // Clear display buffer
   set_distance_monitor(160);
   set_battery_charge_monitor(80);
@@ -324,7 +324,7 @@ void set_distance_monitor(int distance){
     display.fillCircle(73,32,15, SSD1306_WHITE);
     display.fillCircle(73,32,13, SSD1306_BLACK);
     display.fillRect(56,15,73,49, SSD1306_BLACK);
-  
+
     display.fillCircle(73,32,3, SSD1306_WHITE);
     display.fillCircle(65,32,3, SSD1306_WHITE);
     display.fillCircle(81,32,3, SSD1306_WHITE);
@@ -345,7 +345,7 @@ void set_distance_monitor(int distance){
     display.fillCircle(73,32,15, SSD1306_WHITE);
     display.fillCircle(73,32,13, SSD1306_BLACK);
     display.fillRect(56,15,73,49, SSD1306_BLACK);
-  
+
     display.fillCircle(73,32,3, SSD1306_WHITE);
     display.fillCircle(65,32,3, SSD1306_WHITE);
     display.fillCircle(81,32,3, SSD1306_WHITE);
@@ -357,7 +357,7 @@ void set_distance_monitor(int distance){
     display.fillCircle(73,32,32, SSD1306_WHITE);
     display.fillCircle(73,32,29, SSD1306_BLACK);
     display.fillRect(73-32,32-32,73,32+32, SSD1306_BLACK);
-  
+
     display.fillCircle(73,32,3, SSD1306_WHITE);
     display.fillCircle(65,32,3, SSD1306_WHITE);
     display.fillCircle(81,32,3, SSD1306_WHITE);
@@ -389,5 +389,5 @@ void set_battery_charge_monitor(int percent){
     display.fillRect(117,15,118,14, SSD1306_WHITE);
     display.fillRect(117,5,118,4, SSD1306_WHITE);
     display.fillRect(117,20,118,19, SSD1306_WHITE);
-  }   
+  }
 }
