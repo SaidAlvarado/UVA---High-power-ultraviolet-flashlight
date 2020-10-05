@@ -1,0 +1,594 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D4
+U 1 1 5F1E02A2
+P 4800 2000
+F 0 "D4" H 4800 1800 50  0000 C CNN
+F 1 "UVLED 4" H 4800 1900 50  0000 C CNN
+F 2 "IN-C39ATOU2:IN-C39ATOU2" H 4800 2000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf" H 4800 2000 50  0001 C CNN
+F 4 "Inolux" H 4800 2000 50  0001 C CNN "Mfr"
+F 5 "IN-C39ATOU2" H 4800 2000 50  0001 C CNN "Mfr #"
+F 6 " $13.62" H 4800 2000 50  0001 C CNN "Price"
+	1    4800 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5F2313D5
+P 5450 2000
+F 0 "D5" H 5450 1783 50  0000 C CNN
+F 1 "UVLED 5" H 5450 1874 50  0000 C CNN
+F 2 "IN-C39ATOU2:IN-C39ATOU2" H 5450 2000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf" H 5450 2000 50  0001 C CNN
+F 4 "Inolux" H 5450 2000 50  0001 C CNN "Mfr"
+F 5 "IN-C39ATOU2" H 5450 2000 50  0001 C CNN "Mfr #"
+F 6 " $13.62" H 5450 2000 50  0001 C CNN "Price"
+	1    5450 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5F2317FA
+P 4150 2000
+F 0 "D3" H 4150 1783 50  0000 C CNN
+F 1 "UVLED 3" H 4150 1874 50  0000 C CNN
+F 2 "IN-C39ATOU2:IN-C39ATOU2" H 4150 2000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf" H 4150 2000 50  0001 C CNN
+F 4 "Inolux" H 4150 2000 50  0001 C CNN "Mfr"
+F 5 "IN-C39ATOU2" H 4150 2000 50  0001 C CNN "Mfr #"
+F 6 " $13.62" H 4150 2000 50  0001 C CNN "Price"
+	1    4150 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5F23189D
+P 3500 2000
+F 0 "D2" H 3500 1783 50  0000 C CNN
+F 1 "UVLED 2" H 3500 1874 50  0000 C CNN
+F 2 "IN-C39ATOU2:IN-C39ATOU2" H 3500 2000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf" H 3500 2000 50  0001 C CNN
+F 4 "Inolux" H 3500 2000 50  0001 C CNN "Mfr"
+F 5 "IN-C39ATOU2" H 3500 2000 50  0001 C CNN "Mfr #"
+F 6 " $13.62" H 3500 2000 50  0001 C CNN "Price"
+	1    3500 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5F231B4B
+P 2850 2000
+F 0 "D1" H 2850 1783 50  0000 C CNN
+F 1 "UVLED 1" H 2850 1874 50  0000 C CNN
+F 2 "IN-C39ATOU2:IN-C39ATOU2" H 2850 2000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf" H 2850 2000 50  0001 C CNN
+F 4 "Inolux" H 2850 2000 50  0001 C CNN "Mfr"
+F 5 "IN-C39ATOU2" H 2850 2000 50  0001 C CNN "Mfr #"
+F 6 " $13.62" H 2850 2000 50  0001 C CNN "Price"
+	1    2850 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 5F2320D2
+P 6100 2000
+F 0 "D6" H 6100 1783 50  0000 C CNN
+F 1 "UVLED 6" H 6100 1874 50  0000 C CNN
+F 2 "IN-C39ATOU2:IN-C39ATOU2" H 6100 2000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf" H 6100 2000 50  0001 C CNN
+F 4 "Inolux" H 6100 2000 50  0001 C CNN "Mfr"
+F 5 "IN-C39ATOU2" H 6100 2000 50  0001 C CNN "Mfr #"
+F 6 " $13.62" H 6100 2000 50  0001 C CNN "Price"
+	1    6100 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L VL53L1X:VL53L1X U1
+U 1 1 5F23331E
+P 4350 3850
+F 0 "U1" H 4375 4565 50  0000 C CNN
+F 1 "VL53L1X" H 4375 4474 50  0000 C CNN
+F 2 "VL53L1X:VL53L1X" H 4150 4550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/389/dm00452094-1799360.pdf" H 4150 4550 50  0001 C CNN
+F 4 "STMicroelectronics" H 4350 3850 50  0001 C CNN "Mfr"
+F 5 "VL53L1CXV0FY/1" H 4350 3850 50  0001 C CNN "Mfr #"
+F 6 "$6.43" H 4350 3850 50  0001 C CNN "Price"
+	1    4350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5F234A1E
+P 5400 4350
+F 0 "#PWR014" H 5400 4100 50  0001 C CNN
+F 1 "GND" H 5405 4177 50  0000 C CNN
+F 2 "" H 5400 4350 50  0001 C CNN
+F 3 "" H 5400 4350 50  0001 C CNN
+	1    5400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5F235DBF
+P 3500 3200
+F 0 "R6" H 3570 3246 50  0000 L CNN
+F 1 "10k" H 3570 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3430 3200 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf" H 3500 3200 50  0001 C CNN
+F 4 "Vishay / Dale" H 3500 3200 50  0001 C CNN "Mfr"
+F 5 "CRCW120610K0JNEAC" H 3500 3200 50  0001 C CNN "Mfr #"
+F 6 "$0.10" H 3500 3200 50  0001 C CNN "Price"
+	1    3500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F2367B9
+P 3250 3200
+F 0 "R4" H 3320 3246 50  0000 L CNN
+F 1 "10k" H 3320 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3180 3200 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf" H 3250 3200 50  0001 C CNN
+F 4 "Vishay / Dale" H 3250 3200 50  0001 C CNN "Mfr"
+F 5 "CRCW120610K0JNEAC" H 3250 3200 50  0001 C CNN "Mfr #"
+F 6 "$0.10" H 3250 3200 50  0001 C CNN "Price"
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F236D39
+P 2800 3200
+F 0 "R2" H 2870 3246 50  0000 L CNN
+F 1 "10k" H 2870 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2730 3200 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf" H 2800 3200 50  0001 C CNN
+F 4 "Vishay / Dale" H 2800 3200 50  0001 C CNN "Mfr"
+F 5 "CRCW120610K0JNEAC" H 2800 3200 50  0001 C CNN "Mfr #"
+F 6 "$0.10" H 2800 3200 50  0001 C CNN "Price"
+	1    2800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F237E6D
+P 5600 3650
+F 0 "C2" H 5715 3696 50  0000 L CNN
+F 1 "100nF" H 5715 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5638 3500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 5600 3650 50  0001 C CNN
+F 4 "KEMET" H 5600 3650 50  0001 C CNN "Mfr"
+F 5 "C1206C104K5RAC7210" H 5600 3650 50  0001 C CNN "Mfr #"
+F 6 "$0.12" H 5600 3650 50  0001 C CNN "Price"
+	1    5600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F2388C8
+P 6150 3650
+F 0 "C3" H 6265 3696 50  0000 L CNN
+F 1 "4.7uF" H 6265 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6188 3500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 6150 3650 50  0001 C CNN
+F 4 "KEMET" H 6150 3650 50  0001 C CNN "Mfr"
+F 5 "C1206C475K5RACTU" H 6150 3650 50  0001 C CNN "Mfr #"
+F 6 "$0.28" H 6150 3650 50  0001 C CNN "Price"
+	1    6150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5F239342
+P 1800 3800
+F 0 "J1" H 1800 4000 50  0000 C CNN
+F 1 "Conn_01x04" H 1900 4100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1800 3800 50  0001 C CNN
+F 3 "~" H 1800 3800 50  0001 C CNN
+	1    1800 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F239DC5
+P 2100 3950
+F 0 "#PWR02" H 2100 3700 50  0001 C CNN
+F 1 "GND" H 2105 3777 50  0000 C CNN
+F 2 "" H 2100 3950 50  0001 C CNN
+F 3 "" H 2100 3950 50  0001 C CNN
+	1    2100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3900 2100 3900
+Wire Wire Line
+	2100 3900 2100 3950
+Wire Wire Line
+	2800 3000 2800 3050
+Wire Wire Line
+	3250 3000 3250 3050
+Wire Wire Line
+	3500 3000 3500 3050
+Wire Wire Line
+	2550 3000 2550 3050
+$Comp
+L Device:R R1
+U 1 1 5F23727B
+P 2550 3200
+F 0 "R1" H 2620 3246 50  0000 L CNN
+F 1 "10k" H 2620 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2480 3200 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf" H 2550 3200 50  0001 C CNN
+F 4 "Vishay / Dale" H 2550 3200 50  0001 C CNN "Mfr"
+F 5 "CRCW120610K0JNEAC" H 2550 3200 50  0001 C CNN "Mfr #"
+F 6 "$0.10" H 2550 3200 50  0001 C CNN "Price"
+	1    2550 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3350 3500 3400
+Wire Wire Line
+	3500 3400 3800 3400
+Wire Wire Line
+	3250 3350 3250 3550
+Wire Wire Line
+	3250 3550 3800 3550
+Wire Wire Line
+	2550 3350 2550 3600
+Wire Wire Line
+	2800 3350 2800 3850
+$Comp
+L power:VCC #PWR03
+U 1 1 5F23F15E
+P 2550 3000
+F 0 "#PWR03" H 2550 2850 50  0001 C CNN
+F 1 "VCC" H 2565 3173 50  0000 C CNN
+F 2 "" H 2550 3000 50  0001 C CNN
+F 3 "" H 2550 3000 50  0001 C CNN
+	1    2550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5F23F721
+P 2800 3000
+F 0 "#PWR04" H 2800 2850 50  0001 C CNN
+F 1 "VCC" H 2815 3173 50  0000 C CNN
+F 2 "" H 2800 3000 50  0001 C CNN
+F 3 "" H 2800 3000 50  0001 C CNN
+	1    2800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 5F23FB20
+P 3250 3000
+F 0 "#PWR06" H 3250 2850 50  0001 C CNN
+F 1 "VCC" H 3265 3173 50  0000 C CNN
+F 2 "" H 3250 3000 50  0001 C CNN
+F 3 "" H 3250 3000 50  0001 C CNN
+	1    3250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR08
+U 1 1 5F23FDB6
+P 3500 3000
+F 0 "#PWR08" H 3500 2850 50  0001 C CNN
+F 1 "VCC" H 3515 3173 50  0000 C CNN
+F 2 "" H 3500 3000 50  0001 C CNN
+F 3 "" H 3500 3000 50  0001 C CNN
+	1    3500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR013
+U 1 1 5F23FF7D
+P 5400 3250
+F 0 "#PWR013" H 5400 3100 50  0001 C CNN
+F 1 "VCC" H 5415 3423 50  0000 C CNN
+F 2 "" H 5400 3250 50  0001 C CNN
+F 3 "" H 5400 3250 50  0001 C CNN
+	1    5400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3400 5050 3400
+Wire Wire Line
+	5400 3400 5400 3250
+Wire Wire Line
+	4950 3550 5050 3550
+Wire Wire Line
+	5050 3550 5050 3400
+Connection ~ 5050 3400
+Wire Wire Line
+	5050 3400 5400 3400
+Wire Wire Line
+	4950 4300 5050 4300
+Wire Wire Line
+	5400 4300 5400 4350
+Wire Wire Line
+	4950 4150 5050 4150
+Wire Wire Line
+	5050 4150 5050 4300
+Connection ~ 5050 4300
+Wire Wire Line
+	5050 4300 5400 4300
+Wire Wire Line
+	4950 4000 5050 4000
+Wire Wire Line
+	5050 4000 5050 4150
+Connection ~ 5050 4150
+Wire Wire Line
+	4950 3850 5050 3850
+Wire Wire Line
+	5050 3850 5050 4000
+Connection ~ 5050 4000
+Wire Wire Line
+	4950 3700 5050 3700
+Wire Wire Line
+	5050 3700 5050 3800
+Connection ~ 5050 3850
+Wire Wire Line
+	5400 3400 5600 3400
+Wire Wire Line
+	6150 3400 6150 3500
+Connection ~ 5400 3400
+Wire Wire Line
+	5600 3500 5600 3400
+Connection ~ 5600 3400
+Wire Wire Line
+	5600 3400 6150 3400
+Wire Wire Line
+	5600 3800 5050 3800
+Connection ~ 5050 3800
+Wire Wire Line
+	5050 3800 5050 3850
+Wire Wire Line
+	6150 3800 5600 3800
+Connection ~ 5600 3800
+Wire Wire Line
+	3000 2000 3350 2000
+Wire Wire Line
+	3650 2000 4000 2000
+Wire Wire Line
+	4300 2000 4650 2000
+Wire Wire Line
+	4950 2000 5300 2000
+Wire Wire Line
+	5600 2000 5950 2000
+Wire Wire Line
+	2700 2000 2500 2000
+Wire Wire Line
+	2500 2000 2500 1550
+Wire Wire Line
+	2500 1550 4250 1550
+Wire Wire Line
+	6250 2000 6450 2000
+Wire Wire Line
+	6450 2000 6450 1550
+Wire Wire Line
+	6450 1550 4350 1550
+$Comp
+L power:VCC #PWR01
+U 1 1 5F24C3D6
+P 2300 3900
+F 0 "#PWR01" H 2300 3750 50  0001 C CNN
+F 1 "VCC" H 2300 3800 50  0000 C CNN
+F 2 "" H 2300 3900 50  0001 C CNN
+F 3 "" H 2300 3900 50  0001 C CNN
+	1    2300 3900
+	1    0    0    -1  
+$EndComp
+Text Notes 1500 3800 0    50   ~ 0
+VCC
+Text Notes 1500 3600 0    50   ~ 0
+SDA
+Text Notes 1500 3700 0    50   ~ 0
+SCL
+Text Notes 1500 3900 0    50   ~ 0
+GND
+Text Notes 3900 1500 0    50   ~ 0
+LED +
+Text Notes 4450 1500 0    50   ~ 0
+LED -
+$Comp
+L Sensor_Temperature:LM73 U2
+U 1 1 5F24DEDE
+P 4400 6500
+F 0 "U2" H 3950 6850 50  0000 C CNN
+F 1 "LM73" H 4750 6150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4850 6850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm73.pdf" H 4000 6950 50  0001 C CNN
+F 4 "Texas Instruments" H 4400 6500 50  0001 C CNN "Mfr"
+F 5 "LM73C0QDDCRQ1" H 4400 6500 50  0001 C CNN "Mfr #"
+F 6 "$2.54" H 4400 6500 50  0001 C CNN "Price"
+	1    4400 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR09
+U 1 1 5F24EEF0
+P 4400 5800
+F 0 "#PWR09" H 4400 5650 50  0001 C CNN
+F 1 "VCC" H 4415 5973 50  0000 C CNN
+F 2 "" H 4400 5800 50  0001 C CNN
+F 3 "" H 4400 5800 50  0001 C CNN
+	1    4400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5F24F564
+P 4400 7050
+F 0 "#PWR010" H 4400 6800 50  0001 C CNN
+F 1 "GND" H 4405 6877 50  0000 C CNN
+F 2 "" H 4400 7050 50  0001 C CNN
+F 3 "" H 4400 7050 50  0001 C CNN
+	1    4400 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5800 4400 5950
+Wire Wire Line
+	4400 6900 4400 7050
+$Comp
+L Device:C C1
+U 1 1 5F251FBA
+P 4800 5950
+F 0 "C1" V 4548 5950 50  0000 C CNN
+F 1 "100nF" V 4639 5950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4838 5800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 4800 5950 50  0001 C CNN
+F 4 "KEMET" V 4800 5950 50  0001 C CNN "Mfr"
+F 5 "C1206C104K5RAC7210" V 4800 5950 50  0001 C CNN "Mfr #"
+F 6 "$0.12" V 4800 5950 50  0001 C CNN "Price"
+	1    4800 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5F25381D
+P 5100 5950
+F 0 "#PWR011" H 5100 5700 50  0001 C CNN
+F 1 "GND" H 5105 5777 50  0000 C CNN
+F 2 "" H 5100 5950 50  0001 C CNN
+F 3 "" H 5100 5950 50  0001 C CNN
+	1    5100 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5950 4400 5950
+Connection ~ 4400 5950
+Wire Wire Line
+	4400 5950 4400 6100
+Wire Wire Line
+	5100 5950 4950 5950
+NoConn ~ 5000 6600
+$Comp
+L power:GND #PWR012
+U 1 1 5F25FB5C
+P 5300 6450
+F 0 "#PWR012" H 5300 6200 50  0001 C CNN
+F 1 "GND" H 5305 6277 50  0000 C CNN
+F 2 "" H 5300 6450 50  0001 C CNN
+F 3 "" H 5300 6450 50  0001 C CNN
+	1    5300 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6400 5300 6400
+Wire Wire Line
+	5300 6400 5300 6450
+Wire Notes Line
+	2550 5300 2550 7450
+Wire Notes Line
+	2550 7450 5700 7450
+Wire Notes Line
+	5700 7450 5700 5300
+Wire Notes Line
+	5700 5300 2550 5300
+Text Notes 2550 5250 0    118  ~ 24
+Temperature Sensor
+Wire Wire Line
+	2550 3700 3350 3700
+Wire Wire Line
+	2800 3850 3000 3850
+Wire Wire Line
+	3000 3850 3000 6600
+Connection ~ 3000 3850
+Wire Notes Line
+	2400 2650 2400 4650
+Wire Notes Line
+	2400 4650 6550 4650
+Wire Notes Line
+	6550 4650 6550 2650
+Wire Notes Line
+	6550 2650 2400 2650
+Text Notes 2400 2600 0    118  ~ 24
+Distance Sensor
+Wire Notes Line
+	2400 900  2400 2200
+Wire Notes Line
+	2400 2200 6600 2200
+Wire Notes Line
+	6600 2200 6600 900 
+Wire Notes Line
+	6600 900  2400 900 
+Text Notes 2400 850  0    118  ~ 24
+High Power LEDs
+Wire Wire Line
+	4250 1550 4250 1400
+Wire Wire Line
+	4350 1550 4350 1400
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5F2A1772
+P 4250 1200
+F 0 "J2" V 4250 1450 50  0000 R CNN
+F 1 "Conn_01x01" V 4123 1112 50  0001 R CNN
+F 2 "Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD4.4mm" H 4250 1200 50  0001 C CNN
+F 3 "~" H 4250 1200 50  0001 C CNN
+	1    4250 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5F2A2209
+P 4350 1200
+F 0 "J3" V 4350 1050 50  0000 R CNN
+F 1 "Conn_01x01" V 4223 1112 50  0001 R CNN
+F 2 "Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD4.4mm" H 4350 1200 50  0001 C CNN
+F 3 "~" H 4350 1200 50  0001 C CNN
+	1    4350 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 3850 3800 3850
+Wire Wire Line
+	3350 6400 3350 3700
+Connection ~ 3350 3700
+Wire Wire Line
+	3350 3700 3800 3700
+Wire Wire Line
+	3350 6400 3800 6400
+Wire Wire Line
+	3000 6600 3800 6600
+Text Notes 500  6200 0    118  ~ 0
+No pull-up resistors\nSharing the ones from\nthe other sensor
+Wire Wire Line
+	2300 3900 2300 3950
+Wire Wire Line
+	2300 3950 2200 3950
+Wire Wire Line
+	2200 3950 2200 3800
+Wire Wire Line
+	2200 3800 2000 3800
+Wire Wire Line
+	2800 3850 2450 3850
+Wire Wire Line
+	2450 3850 2450 3700
+Wire Wire Line
+	2450 3700 2000 3700
+Connection ~ 2800 3850
+Wire Wire Line
+	2000 3600 2550 3600
+Connection ~ 2550 3600
+Wire Wire Line
+	2550 3600 2550 3700
+$EndSCHEMATC

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/run/media/said/OS/Users/said_/Documents/Proyectos/Hackaday Prize 2020/LED Bulb/PCB/inulox_led_bulb/inulox_led_bulb.sch</source>
+    <date>Sun 04 Oct 2020 02:20:15 PM CEST</date>
+    <tool>Eeschema 5.1.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>inulox_led_bulb.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D4">
+      <value>UVLED 4</value>
+      <footprint>IN-C39ATOU2:IN-C39ATOU2</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Inolux</field>
+        <field name="Mfr #">IN-C39ATOU2</field>
+        <field name="Price"> $13.62</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F1E02A2</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>UVLED 5</value>
+      <footprint>IN-C39ATOU2:IN-C39ATOU2</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Inolux</field>
+        <field name="Mfr #">IN-C39ATOU2</field>
+        <field name="Price"> $13.62</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2313D5</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>UVLED 3</value>
+      <footprint>IN-C39ATOU2:IN-C39ATOU2</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Inolux</field>
+        <field name="Mfr #">IN-C39ATOU2</field>
+        <field name="Price"> $13.62</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2317FA</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>UVLED 2</value>
+      <footprint>IN-C39ATOU2:IN-C39ATOU2</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Inolux</field>
+        <field name="Mfr #">IN-C39ATOU2</field>
+        <field name="Price"> $13.62</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F23189D</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>UVLED 1</value>
+      <footprint>IN-C39ATOU2:IN-C39ATOU2</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Inolux</field>
+        <field name="Mfr #">IN-C39ATOU2</field>
+        <field name="Price"> $13.62</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F231B4B</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>UVLED 6</value>
+      <footprint>IN-C39ATOU2:IN-C39ATOU2</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Inolux</field>
+        <field name="Mfr #">IN-C39ATOU2</field>
+        <field name="Price"> $13.62</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2320D2</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>VL53L1X</value>
+      <footprint>VL53L1X:VL53L1X</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/389/dm00452094-1799360.pdf</datasheet>
+      <fields>
+        <field name="Mfr">STMicroelectronics</field>
+        <field name="Mfr #">VL53L1CXV0FY/1</field>
+        <field name="Price">$6.43</field>
+      </fields>
+      <libsource lib="VL53L1X" part="VL53L1X" description="Long distance ranging Time-of-Flight sensor based on ST's FlightSense technology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F23331E</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Vishay / Dale</field>
+        <field name="Mfr #">CRCW120610K0JNEAC</field>
+        <field name="Price">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F235DBF</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Vishay / Dale</field>
+        <field name="Mfr #">CRCW120610K0JNEAC</field>
+        <field name="Price">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2367B9</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Vishay / Dale</field>
+        <field name="Mfr #">CRCW120610K0JNEAC</field>
+        <field name="Price">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F236D39</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
+      <fields>
+        <field name="Mfr">KEMET</field>
+        <field name="Mfr #">C1206C104K5RAC7210</field>
+        <field name="Price">$0.12</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F237E6D</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
+      <fields>
+        <field name="Mfr">KEMET</field>
+        <field name="Mfr #">C1206C475K5RACTU</field>
+        <field name="Price">$0.28</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2388C8</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F239342</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Vishay / Dale</field>
+        <field name="Mfr #">CRCW120610K0JNEAC</field>
+        <field name="Price">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F23727B</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LM73</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm73.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Texas Instruments</field>
+        <field name="Mfr #">LM73C0QDDCRQ1</field>
+        <field name="Price">$2.54</field>
+      </fields>
+      <libsource lib="Sensor_Temperature" part="LM73" description="11 to 14 Bit digital temperature sensor with 2 wire interface, SOT23-6"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F24DEDE</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
+      <fields>
+        <field name="Mfr">KEMET</field>
+        <field name="Mfr #">C1206C104K5RAC7210</field>
+        <field name="Price">$0.12</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F251FBA</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x01</value>
+      <footprint>Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD4.4mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2A1772</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x01</value>
+      <footprint>Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD4.4mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2A2209</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Temperature" part="LM73">
+      <aliases>
+        <alias>LM73-1</alias>
+      </aliases>
+      <description>11 to 14 Bit digital temperature sensor with 2 wire interface, SOT23-6</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm73.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM73</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADDR" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="SMBCLK" type="input"/>
+        <pin num="5" name="~ALERT" type="output"/>
+        <pin num="6" name="SMBDAT" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="VL53L1X" part="VL53L1X">
+      <description>Long distance ranging Time-of-Flight sensor based on ST's FlightSense technology</description>
+      <docs>https://www.mouser.com/datasheet/2/389/dm00452094-1799360.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">VL53L1X</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AVDDVCSEL" type="power_in"/>
+        <pin num="2" name="AVSSVCSEL" type="power_in"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="GND2" type="power_in"/>
+        <pin num="5" name="XSHUT" type="input"/>
+        <pin num="6" name="GND3" type="power_in"/>
+        <pin num="7" name="GPIO1" type="output"/>
+        <pin num="8" name="DNC" type="NotConnected"/>
+        <pin num="9" name="SDA" type="BiDi"/>
+        <pin num="10" name="SCL" type="input"/>
+        <pin num="11" name="AVDD" type="power_in"/>
+        <pin num="12" name="GND4" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Sensor_Temperature">
+      <uri>/usr/share/kicad/library/Sensor_Temperature.lib</uri>
+    </library>
+    <library logical="VL53L1X">
+      <uri>/run/media/said/OS/Users/said_/Documents/Proyectos/Hackaday Prize 2020/LED Bulb/PCB/inulox_led_bulb/VL53L1X.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D4-Pad1)">
+      <node ref="D5" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="2" name="Net-(D5-Pad1)">
+      <node ref="D6" pin="2"/>
+      <node ref="D5" pin="1"/>
+    </net>
+    <net code="3" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="4" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="U1" pin="4"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="12"/>
+      <node ref="U1" pin="6"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad1)">
+      <node ref="D2" pin="2"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="8" name="VCC">
+      <node ref="R1" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U1" pin="11"/>
+      <node ref="C1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="9" name="Net-(D1-Pad2)">
+      <node ref="J2" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="10" name="Net-(D6-Pad1)">
+      <node ref="J3" pin="1"/>
+      <node ref="D6" pin="1"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="12" name="Net-(R6-Pad2)">
+      <node ref="U1" pin="5"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="13" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="14" name="Net-(J1-Pad3)">
+      <node ref="U1" pin="10"/>
+      <node ref="U2" pin="4"/>
+      <node ref="J1" pin="3"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="15" name="Net-(J1-Pad4)">
+      <node ref="R1" pin="2"/>
+      <node ref="U1" pin="9"/>
+      <node ref="U2" pin="6"/>
+      <node ref="J1" pin="4"/>
+    </net>
+  </nets>
+</export>

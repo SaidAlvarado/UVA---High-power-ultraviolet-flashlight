@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS560430
+D SIMPLE SWITCHER 36-V, 600-mA Buck Regulator With High-Efficiency Sleep Mode
+F https://www.ti.com/lit/ds/symlink/tps560430.pdf
+$ENDCMP
+#
+$CMP TPS560430XF
+D SIMPLE SWITCHER 36-V, 600-mA Buck Regulator With High-Efficiency Sleep Mode
+F https://www.ti.com/lit/ds/symlink/tps560430.pdf
+$ENDCMP
+#
+#End Doc Library

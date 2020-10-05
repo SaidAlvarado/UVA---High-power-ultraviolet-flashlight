@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/run/media/said/OS/Users/said_/Documents/Proyectos/Hackaday Prize 2020/led driver/PCB/AL8853_Led_driver/AL8853_Led_driver.sch</source>
+    <date>Sun 04 Oct 2020 02:22:33 PM CEST</date>
+    <tool>Eeschema 5.1.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>AL8853 Constant Current - 24w - UV LED Driver</title>
+        <company/>
+        <rev>1.0</rev>
+        <date>2020-07-17</date>
+        <source>AL8853_Led_driver.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R3">
+      <value>60m</value>
+      <footprint>Resistor_SMD:R_2010_5025Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mfr">Vishay / Dale</field>
+        <field name="Mfr #">WSLT2010R0600FEB18 </field>
+        <field name="Price">$1.04</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F11D6FD</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>47uH</value>
+      <footprint>AL8853_Led_driver:L_Bourns_SRP1265A</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/54/srp1265a-1391487.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Bourns</field>
+        <field name="Mfr #">SRP1265A-470M</field>
+        <field name="Price">$1.46</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F11E2B1</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>DMTH43M8LK3Q</value>
+      <footprint>Package_TO_SOT_SMD:TO-252-2</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/115/DMTH43M8LK3Q-1142739.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Diodes Incorporated</field>
+        <field name="Mfr #">DMTH43M8LK3Q-13</field>
+        <field name="Price">$0.86</field>
+      </fields>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F1200DA</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>150k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/dcrcwe3-1762152.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Vishay / Dale</field>
+        <field name="Mfr #">CRCW1206150KJNEA</field>
+        <field name="Price">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F124C2E</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Vishay / Dale</field>
+        <field name="Mfr #">CRCW120610K0JNEAC</field>
+        <field name="Price">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F1253EA</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>220uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_8x10</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/293/e-ucm-883824.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Nichicon</field>
+        <field name="Mfr #">UCM1H221MNL1GS</field>
+        <field name="Price">$1.00</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F125F7E</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
+      <fields>
+        <field name="Mfr">KEMET</field>
+        <field name="Mfr #">C1206C104K5RAC7210 </field>
+        <field name="Price">$0.12</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F126594</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>220m</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/427/rcwe-1761813.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Vishay / Dale</field>
+        <field name="Mfr #">RCWE1206R200FKEA </field>
+        <field name="Price">$0.65</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F1311D2</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Vishay / Dale</field>
+        <field name="Mfr #">CRCW120610K0JNEAC</field>
+        <field name="Price">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F132DE9</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
+      <fields>
+        <field name="Mfr">KEMET</field>
+        <field name="Mfr #">C1206C475K5RACTU</field>
+        <field name="Price">$0.28</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F135E42</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>D_Schottky_AAK</value>
+      <footprint>AL8853_Led_driver:Nexperia_CFP15_SOT-1289</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/916/PMEG045V100EPD-1320491.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Nexperia</field>
+        <field name="Mfr #">PMEG045V100EPDAZ</field>
+        <field name="Price">$0.63</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_AAK" description="Schottky diode, anode on pins 1 and 2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F11FABF</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>UV Leds</value>
+      <footprint>Connector_Wire:SolderWire-2.5sqmm_1x02_P8.8mm_D2.4mm_OD4.4mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F125365</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Vbat</value>
+      <footprint>Connector_Wire:SolderWire-2.5sqmm_1x02_P8.8mm_D2.4mm_OD4.4mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F1257F0</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>PWM - Dimming</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F127505</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
+      <fields>
+        <field name="Mfr">KEMET</field>
+        <field name="Mfr #">C1206C104K5RAC7210 </field>
+        <field name="Price">$0.12</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F14A7C8</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AL8853</value>
+      <footprint>Package_SO:SO-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AL8853.pdf</datasheet>
+      <fields>
+        <field name="Mfr">Diodes Incorporated </field>
+        <field name="Mfr #">AL8853S-13 </field>
+        <field name="Price">$0.68</field>
+      </fields>
+      <libsource lib="al8853" part="AL8853" description="High-Performance Boost LED Controller Constant Current, SO8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F11EECE</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky_AAK">
+      <description>Schottky diode, anode on pins 1 and 2</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_AAK</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+        <pin num="3" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GDS">
+      <description>N-MOSFET transistor, gate/drain/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="al8853" part="AL8853">
+      <description>High-Performance Boost LED Controller Constant Current, SO8</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AL8853.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AL8853</field>
+        <field name="Footprint">Package_SO:SO-8_3.9x4.9mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GATE" type="output"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="CS" type="input"/>
+        <pin num="5" name="FB" type="input"/>
+        <pin num="6" name="COMP" type="passive"/>
+        <pin num="7" name="OVP" type="input"/>
+        <pin num="8" name="PWM" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="al8853">
+      <uri>/run/media/said/OS/Users/said_/Documents/Proyectos/Hackaday Prize 2020/led driver/PCB/AL8853_Led_driver/Library/al8853/al8853.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="2" name="Net-(J2-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="C4" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="4" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="5" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="6" name="Net-(C2-Pad1)">
+      <node ref="U1" pin="6"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="7" name="Net-(C3-Pad1)">
+      <node ref="D2" pin="3"/>
+      <node ref="C3" pin="1"/>
+      <node ref="J3" pin="2"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="8" name="Net-(Q1-Pad1)">
+      <node ref="U1" pin="2"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="9" name="Net-(D2-Pad1)">
+      <node ref="L1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="10" name="Net-(Q1-Pad3)">
+      <node ref="U1" pin="4"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="11" name="Net-(R4-Pad1)">
+      <node ref="R5" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="7"/>
+    </net>
+  </nets>
+</export>

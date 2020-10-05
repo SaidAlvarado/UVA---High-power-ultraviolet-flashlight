@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP VL53L1X
+D Long distance ranging Time-of-Flight sensor based on ST's FlightSense technology
+K distance sensor, time-of-flight
+F https://www.mouser.com/datasheet/2/389/dm00452094-1799360.pdf
+$ENDCMP
+#
+#End Doc Library

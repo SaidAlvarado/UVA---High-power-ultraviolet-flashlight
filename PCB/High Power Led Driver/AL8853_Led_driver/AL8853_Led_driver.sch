@@ -1,0 +1,447 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "AL8853 Constant Current - 24w - UV LED Driver"
+Date "2020-07-17"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R3
+U 1 1 5F11D6FD
+P 3450 2550
+F 0 "R3" H 3300 2500 50  0000 C CNN
+F 1 "60m" H 3300 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_2010_5025Metric" V 3380 2550 50  0001 C CNN
+F 3 "~" H 3450 2550 50  0001 C CNN
+F 4 "Vishay / Dale" H 3450 2550 50  0001 C CNN "Mfr"
+F 5 "WSLT2010R0600FEB18 " H 3450 2550 50  0001 C CNN "Mfr #"
+F 6 "$1.04" H 3450 2550 50  0001 C CNN "Price"
+	1    3450 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5F11E2B1
+P 2900 1700
+F 0 "L1" V 3000 1700 50  0000 C CNN
+F 1 "47uH" V 2800 1700 50  0000 C CNN
+F 2 "AL8853_Led_driver:L_Bourns_SRP1265A" H 2900 1700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/srp1265a-1391487.pdf" H 2900 1700 50  0001 C CNN
+F 4 "Bourns" V 2900 1700 50  0001 C CNN "Mfr"
+F 5 "SRP1265A-470M" V 2900 1700 50  0001 C CNN "Mfr #"
+F 6 "$1.46" V 2900 1700 50  0001 C CNN "Price"
+	1    2900 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5F1200DA
+P 3350 2100
+F 0 "Q1" H 3554 2146 50  0000 L CNN
+F 1 "DMTH43M8LK3Q" H 3554 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3550 2200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/DMTH43M8LK3Q-1142739.pdf" H 3350 2100 50  0001 C CNN
+F 4 "Diodes Incorporated" H 3350 2100 50  0001 C CNN "Mfr"
+F 5 "DMTH43M8LK3Q-13" H 3350 2100 50  0001 C CNN "Mfr #"
+F 6 "$0.86" H 3350 2100 50  0001 C CNN "Price"
+	1    3350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F124C2E
+P 4300 2000
+F 0 "R4" H 4200 1950 50  0000 C CNN
+F 1 "150k" H 4150 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4230 2000 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/427/dcrcwe3-1762152.pdf" H 4300 2000 50  0001 C CNN
+F 4 "Vishay / Dale" H 4300 2000 50  0001 C CNN "Mfr"
+F 5 "CRCW1206150KJNEA" H 4300 2000 50  0001 C CNN "Mfr #"
+F 6 "$0.10" H 4300 2000 50  0001 C CNN "Price"
+	1    4300 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5F1253EA
+P 4300 2600
+F 0 "R5" H 4150 2550 50  0000 L CNN
+F 1 "10k" H 4100 2650 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4230 2600 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf" H 4300 2600 50  0001 C CNN
+F 4 "Vishay / Dale" H 4300 2600 50  0001 C CNN "Mfr"
+F 5 "CRCW120610K0JNEAC" H 4300 2600 50  0001 C CNN "Mfr #"
+F 6 "$0.10" H 4300 2600 50  0001 C CNN "Price"
+	1    4300 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5F125F7E
+P 4800 2000
+F 0 "C3" H 4918 2046 50  0000 L CNN
+F 1 "220uF" H 4918 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 4838 1850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/293/e-ucm-883824.pdf" H 4800 2000 50  0001 C CNN
+F 4 "UCM1H221MNL1GS" H 4800 2000 50  0001 C CNN "Mfr #"
+F 5 "$1.00" H 4800 2000 50  0001 C CNN "Price"
+F 6 "Nichicon" H 4800 2000 50  0001 C CNN "Mfr"
+	1    4800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F126594
+P 1700 2750
+F 0 "C2" H 1400 2800 50  0000 L CNN
+F 1 "100nF" H 1350 2700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1738 2600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 1700 2750 50  0001 C CNN
+F 4 "C1206C104K5RAC7210 " H 1700 2750 50  0001 C CNN "Mfr #"
+F 5 "$0.12" H 1700 2750 50  0001 C CNN "Price"
+F 6 "KEMET" H 1700 2750 50  0001 C CNN "Mfr"
+	1    1700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F1274DE
+P 2450 3100
+F 0 "#PWR04" H 2450 2850 50  0001 C CNN
+F 1 "GND" H 2455 2927 50  0000 C CNN
+F 2 "" H 2450 3100 50  0001 C CNN
+F 3 "" H 2450 3100 50  0001 C CNN
+	1    2450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F129378
+P 1700 3000
+F 0 "#PWR02" H 1700 2750 50  0001 C CNN
+F 1 "GND" H 1705 2827 50  0000 C CNN
+F 2 "" H 1700 3000 50  0001 C CNN
+F 3 "" H 1700 3000 50  0001 C CNN
+	1    1700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5F12AC35
+P 3450 2800
+F 0 "#PWR05" H 3450 2550 50  0001 C CNN
+F 1 "GND" H 3455 2627 50  0000 C CNN
+F 2 "" H 3450 2800 50  0001 C CNN
+F 3 "" H 3450 2800 50  0001 C CNN
+	1    3450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5F1311D2
+P 5550 2350
+F 0 "R6" H 5400 2300 50  0000 C CNN
+F 1 "220m" H 5250 2400 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5480 2350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/rcwe-1761813.pdf" H 5550 2350 50  0001 C CNN
+F 4 "Vishay / Dale" H 5550 2350 50  0001 C CNN "Mfr"
+F 5 "RCWE1206R200FKEA " H 5550 2350 50  0001 C CNN "Mfr #"
+F 6 "$0.65" H 5550 2350 50  0001 C CNN "Price"
+	1    5550 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5F131EA8
+P 4300 2800
+F 0 "#PWR06" H 4300 2550 50  0001 C CNN
+F 1 "GND" H 4305 2627 50  0000 C CNN
+F 2 "" H 4300 2800 50  0001 C CNN
+F 3 "" H 4300 2800 50  0001 C CNN
+	1    4300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5F132401
+P 4800 2300
+F 0 "#PWR07" H 4800 2050 50  0001 C CNN
+F 1 "GND" H 4805 2127 50  0000 C CNN
+F 2 "" H 4800 2300 50  0001 C CNN
+F 3 "" H 4800 2300 50  0001 C CNN
+	1    4800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5F1327D9
+P 5550 2600
+F 0 "#PWR08" H 5550 2350 50  0001 C CNN
+F 1 "GND" H 5555 2427 50  0000 C CNN
+F 2 "" H 5550 2600 50  0001 C CNN
+F 3 "" H 5550 2600 50  0001 C CNN
+	1    5550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F132DE9
+P 1700 2250
+F 0 "R1" V 1600 2250 50  0000 C CNN
+F 1 "10k" V 1800 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1630 2250 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/427/crcwce3-1762584.pdf" H 1700 2250 50  0001 C CNN
+F 4 "Vishay / Dale" V 1700 2250 50  0001 C CNN "Mfr"
+F 5 "CRCW120610K0JNEAC" V 1700 2250 50  0001 C CNN "Mfr #"
+F 6 "$0.10" V 1700 2250 50  0001 C CNN "Price"
+	1    1700 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5F135E42
+P 2150 1400
+F 0 "C1" V 1895 1400 50  0000 C CNN
+F 1 "4.7uF" V 1986 1400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2188 1250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2150 1400 50  0001 C CNN
+F 4 "KEMET" V 2150 1400 50  0001 C CNN "Mfr"
+F 5 "C1206C475K5RACTU" V 2150 1400 50  0001 C CNN "Mfr #"
+F 6 "$0.28" V 2150 1400 50  0001 C CNN "Price"
+	1    2150 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 2900 1700 3000
+Wire Wire Line
+	2450 2850 2450 3100
+Wire Wire Line
+	2000 2250 1850 2250
+Wire Wire Line
+	2000 2500 1700 2500
+Wire Wire Line
+	1700 2500 1700 2600
+Wire Wire Line
+	2900 2100 3150 2100
+Wire Wire Line
+	3450 2300 3450 2350
+Wire Wire Line
+	3300 2350 3450 2350
+Connection ~ 3450 2350
+Wire Wire Line
+	3450 2350 3450 2400
+Wire Wire Line
+	3450 2700 3450 2800
+Wire Wire Line
+	2900 2500 3150 2500
+Wire Wire Line
+	3150 2500 3150 3100
+Wire Wire Line
+	3150 3100 3900 3100
+Wire Wire Line
+	3900 3100 3900 2350
+Wire Wire Line
+	3900 2350 4300 2350
+Wire Wire Line
+	4300 2350 4300 2450
+Wire Wire Line
+	4300 2150 4300 2350
+Connection ~ 4300 2350
+Wire Wire Line
+	3450 1900 3450 1700
+Wire Wire Line
+	3450 1700 3050 1700
+Wire Wire Line
+	4800 1850 4800 1700
+Wire Wire Line
+	4300 1850 4300 1700
+Wire Wire Line
+	4300 1700 4800 1700
+Wire Wire Line
+	4300 2750 4300 2800
+Wire Wire Line
+	4800 2150 4800 2300
+Wire Wire Line
+	2900 2700 3000 2700
+Wire Wire Line
+	3000 2700 3000 3250
+Wire Wire Line
+	5550 2500 5550 2600
+Wire Wire Line
+	2450 1900 2450 1700
+Connection ~ 2450 1700
+Wire Wire Line
+	2450 1700 2750 1700
+$Comp
+L power:GND #PWR03
+U 1 1 5F143B68
+P 1900 1400
+F 0 "#PWR03" H 1900 1150 50  0001 C CNN
+F 1 "GND" H 1905 1227 50  0000 C CNN
+F 2 "" H 1900 1400 50  0001 C CNN
+F 3 "" H 1900 1400 50  0001 C CNN
+	1    1900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1400 2000 1400
+Connection ~ 2300 1700
+Wire Wire Line
+	2300 1700 2450 1700
+Wire Wire Line
+	2900 2300 3300 2300
+Wire Wire Line
+	3300 2300 3300 2350
+$Comp
+L Device:D_Schottky_AAK D2
+U 1 1 5F11FABF
+P 3950 1700
+F 0 "D2" H 3975 1475 50  0000 C CNN
+F 1 "D_Schottky_AAK" H 3975 1566 50  0000 C CNN
+F 2 "AL8853_Led_driver:Nexperia_CFP15_SOT-1289" H 3950 1700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/916/PMEG045V100EPD-1320491.pdf" H 3950 1700 50  0001 C CNN
+F 4 "Nexperia" H 3950 1700 50  0001 C CNN "Mfr"
+F 5 "PMEG045V100EPDAZ" H 3950 1700 50  0001 C CNN "Mfr #"
+F 6 "$0.63" H 3950 1700 50  0001 C CNN "Price"
+	1    3950 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 1700 3700 1700
+Connection ~ 3450 1700
+Wire Wire Line
+	4100 1700 4300 1700
+Connection ~ 4300 1700
+Wire Wire Line
+	3750 1800 3700 1800
+Wire Wire Line
+	3700 1800 3700 1700
+Connection ~ 3700 1700
+Wire Wire Line
+	3700 1700 3450 1700
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5F125365
+P 5900 1800
+F 0 "J3" H 5900 1950 50  0000 L CNN
+F 1 "UV Leds" H 5800 1600 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-2.5sqmm_1x02_P8.8mm_D2.4mm_OD4.4mm" H 5900 1800 50  0001 C CNN
+F 3 "~" H 5900 1800 50  0001 C CNN
+	1    5900 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5F1257F0
+P 850 1800
+F 0 "J1" H 850 1900 50  0000 C CNN
+F 1 "Vbat" H 850 1600 50  0000 C CNN
+F 2 "Connector_Wire:SolderWire-2.5sqmm_1x02_P8.8mm_D2.4mm_OD4.4mm" H 850 1800 50  0001 C CNN
+F 3 "~" H 850 1800 50  0001 C CNN
+	1    850  1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5F126F4B
+P 1200 1800
+F 0 "#PWR01" H 1200 1550 50  0001 C CNN
+F 1 "GND" H 1205 1627 50  0000 C CNN
+F 2 "" H 1200 1800 50  0001 C CNN
+F 3 "" H 1200 1800 50  0001 C CNN
+	1    1200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F127505
+P 850 2350
+F 0 "J2" H 850 2150 50  0000 C CNN
+F 1 "PWM - Dimming" H 900 2450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 850 2350 50  0001 C CNN
+F 3 "~" H 850 2350 50  0001 C CNN
+	1    850  2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1050 1700 2300 1700
+Wire Wire Line
+	1050 1800 1200 1800
+Wire Wire Line
+	4800 1700 5700 1700
+Connection ~ 4800 1700
+Wire Wire Line
+	5700 1800 5550 1800
+Wire Wire Line
+	5300 1800 5300 3250
+Wire Wire Line
+	5300 3250 3000 3250
+Connection ~ 5550 1800
+Wire Wire Line
+	5550 1800 5300 1800
+Wire Wire Line
+	5550 1800 5550 2200
+Wire Wire Line
+	1050 2250 1550 2250
+$Comp
+L Device:C C4
+U 1 1 5F14A7C8
+P 2150 950
+F 0 "C4" V 1898 950 50  0000 C CNN
+F 1 "100nF" V 1989 950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2188 800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2150 950 50  0001 C CNN
+F 4 "KEMET" V 2150 950 50  0001 C CNN "Mfr"
+F 5 "C1206C104K5RAC7210 " V 2150 950 50  0001 C CNN "Mfr #"
+F 6 "$0.12" V 2150 950 50  0001 C CNN "Price"
+	1    2150 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 950  2300 1400
+Connection ~ 2300 1400
+Wire Wire Line
+	2300 1400 2300 1700
+Wire Wire Line
+	2000 950  1900 950 
+Wire Wire Line
+	1900 950  1900 1400
+Connection ~ 1900 1400
+$Comp
+L power:GND #PWR0101
+U 1 1 5F5D4CE3
+P 1200 2450
+F 0 "#PWR0101" H 1200 2200 50  0001 C CNN
+F 1 "GND" H 1205 2277 50  0000 C CNN
+F 2 "" H 1200 2450 50  0001 C CNN
+F 3 "" H 1200 2450 50  0001 C CNN
+	1    1200 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2350 1200 2350
+Wire Wire Line
+	1200 2350 1200 2450
+$Comp
+L al8853:AL8853 U1
+U 1 1 5F11EECE
+P 2450 2400
+F 0 "U1" H 2150 2850 50  0000 C CNN
+F 1 "AL8853" H 2200 2000 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2450 2400 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AL8853.pdf" H 2450 2500 50  0001 C CNN
+F 4 "Diodes Incorporated " H 2450 2400 50  0001 C CNN "Mfr"
+F 5 "AL8853S-13 " H 2450 2400 50  0001 C CNN "Mfr #"
+F 6 "$0.68" H 2450 2400 50  0001 C CNN "Price"
+	1    2450 2400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

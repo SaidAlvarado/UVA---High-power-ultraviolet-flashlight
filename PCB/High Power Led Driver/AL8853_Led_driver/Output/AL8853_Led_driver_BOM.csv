@@ -1,0 +1,16 @@
+Sourced	Placed	References	Mfr	Mfr #	Price	datasheet	Value	Footprint
+1			C2	KEMET	C1206C104K5RAC7210 	$0.12	https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf	100nF	C_1206_3216Metric
+2			C4	KEMET	C1206C104K5RAC7210 	$0.12	https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf	100nF	C_1206_3216Metric
+3			C1	KEMET	C1206C475K5RACTU	$0.28	https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf	4.7uF	C_1206_3216Metric
+4			C3	Nichicon	UCM1H331MNL1GS 	$0.89	https://www.mouser.com/datasheet/2/293/e-ucm-883824.pdf	330uF	CP_Elec_8x10
+5			R1	Vishay / Dale	CRCW120610K0JNEAHP	$0.40	https://www.mouser.com/datasheet/2/427/crcwhpe3-1713858.pdf	10k	R_1206_3216Metric
+6			R5	Vishay / Dale	CRCW120610K0JNEAHP	$0.40	https://www.mouser.com/datasheet/2/427/crcwhpe3-1713858.pdf	10k	R_1206_3216Metric
+7			R4	Vishay / Dale	CRCW1206150KFKEAHP	$0.46	https://www.mouser.com/datasheet/2/427/crcwhpe3-1713858.pdf	150k	R_1206_3216Metric
+8			R6	Vishay / Dale	RCWE1206R200FKEA 	$0.65	https://www.mouser.com/datasheet/2/427/rcwe-1761813.pdf	220m	R_1206_3216Metric
+9			R3	Vishay / Dale	WSLT2010R0600FEB18 	$1.04		60m	R_2010_5025Metric
+10			L1	Bourns	SRP1265A-470M	$1.46	https://www.mouser.com/datasheet/2/54/srp1265a-1391487.pdf	47uH	L_Bourns_SRP1265A
+11			D2	Nexperia	PMEG045V100EPDAZ	$0.63	https://www.mouser.com/datasheet/2/916/PMEG045V100EPD-1320491.pdf	D_Schottky_AAK	Nexperia_CFP15_SOT-1289
+12			U1	Diodes Incorporated 	AL8853S-13 	$0.68	https://www.diodes.com/assets/Datasheets/AL8853.pdf	AL8853	SO-8_3.9x4.9mm_P1.27mm
+13			G***					LOGO	logo
+14			Q1	Diodes Incorporated	DMTH43M8LK3Q-13	$0.86	https://www.mouser.com/datasheet/2/115/DMTH43M8LK3Q-1142739.pdf	DMTH43M8LK3Q	TO-252-2
+15			J2					PWM - Dimming	PinHeader_1x02_P2.54mm_Vertical

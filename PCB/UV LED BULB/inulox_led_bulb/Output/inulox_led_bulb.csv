@@ -1,0 +1,16 @@
+Sourced,Placed,References,Mfr,Mfr #,Price,datasheet,Value,Footprint,
+1,,,C1,KEMET,C1206C104K5RAC7210,$0.12,https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf,100nF,C_1206_3216Metric
+2,,,C2,KEMET,C1206C104K5RAC7210,$0.12,https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf,100nF,C_1206_3216Metric
+3,,,C3,KEMET,C1206C475K5RACTU,$0.28,https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf,4.7uF,C_1206_3216Metric
+4,,,R1,Vishay / Dale,CRCW120610K0JNEAHP,$0.40,https://www.mouser.com/datasheet/2/427/crcwhpe3-1713858.pdf,10k,R_1206_3216Metric
+5,,,R2,Vishay / Dale,CRCW120610K0JNEAHP,$0.40,https://www.mouser.com/datasheet/2/427/crcwhpe3-1713858.pdf,10k,R_1206_3216Metric
+6,,,R4,Vishay / Dale,CRCW120610K0JNEAHP,$0.40,https://www.mouser.com/datasheet/2/427/crcwhpe3-1713858.pdf,10k,R_1206_3216Metric
+7,,,R6,Vishay / Dale,CRCW120610K0JNEAHP,$0.40,https://www.mouser.com/datasheet/2/427/crcwhpe3-1713858.pdf,10k,R_1206_3216Metric
+8,,,D1,Inolux,IN-C39ATOU2, $13.62,https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf,UVLED 1,IN-C39ATOU2
+9,,,D2,Inolux,IN-C39ATOU2, $13.62,https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf,UVLED 2,IN-C39ATOU2
+10,,,D3,Inolux,IN-C39ATOU2, $13.62,https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf,UVLED 3,IN-C39ATOU2
+11,,,D4,Inolux,IN-C39ATOU2, $13.62,https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf,UVLED 4,IN-C39ATOU2
+12,,,D5,Inolux,IN-C39ATOU2, $13.62,https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf,UVLED 5,IN-C39ATOU2
+13,,,D6,Inolux,IN-C39ATOU2, $13.62,https://www.mouser.com/datasheet/2/180/IN-C39(X)TO_UVA_Series_V1.1-1665231.pdf,UVLED 6,IN-C39ATOU2
+14,,,U1,STMicroelectronics,VL53L1CXV0FY/1,$6.43,https://www.mouser.com/datasheet/2/389/dm00452094-1799360.pdf,VL53L1X,VL53L1X
+15,,,U2,Texas Instruments,LM73C0QDDCRQ1,$2.54,http://www.ti.com/lit/ds/symlink/lm73.pdf,LM73,SOT-23-6

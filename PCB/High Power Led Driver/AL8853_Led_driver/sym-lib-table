@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name AL8853_Led_driver-rescue)(type Legacy)(uri ${KIPRJMOD}/AL8853_Led_driver-rescue.lib)(options "")(descr ""))
+  (lib (name al8853)(type Legacy)(uri ${KIPRJMOD}/Library/al8853/al8853.lib)(options "")(descr ""))
+)

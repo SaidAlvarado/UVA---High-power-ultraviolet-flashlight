@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AL8853
+D High-Performance Boost LED Controller Constant Current, SO8
+K High-Performance Boost LED Controller Constant Current
+F https://www.diodes.com/assets/Datasheets/AL8853.pdf
+$ENDCMP
+#
+#End Doc Library

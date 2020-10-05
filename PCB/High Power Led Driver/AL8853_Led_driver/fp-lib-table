@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name AL8853_Led_driver)(type KiCad)(uri ${KIPRJMOD}/Library/AL8853_Led_driver.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri ${KIPRJMOD}/logo)(options "")(descr ""))
+)
